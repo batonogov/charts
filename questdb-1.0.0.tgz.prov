@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1475)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/questdb/questdb
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/questdb
+    - name: Support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/issue: "1426"
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 10.0.1
+description: Production-ready standalone QuestDB with secure authentication, persistence
+  and observability.
+home: https://helmforge.dev/docs/charts/questdb
+icon: https://helmforge.dev/icons/charts/questdb.png
+keywords:
+- - questdb
+- - database
+- - time-series
+- - analytics
+- - kubernetes
+kubeVersion: '>=1.30.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: questdb
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/questdb
+- - https://github.com/questdb/questdb
+type: application
+version: 1.0.0
+
+...
+files:
+  questdb-1.0.0.tgz: sha256:a001c77d5fbc6287d3145e1ae337c7997a48bd4de5ffe0f7d4ce1589ce57b568
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqzTeLCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnXSRLugNfMwAD4OpHB3UItCq6zRsFOiFMPZFBBuf/ljoW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA+U4P/3b8F5rwKKQkHKgQKsnsefhAff+U
+SzS41n1x8C4R5UusO/JqMew9UDS+J/pCtLNwEVlweQ8ePM3dw7riwG30E7Cg+2rr
+Hf/scfWHdKn8OhW8K06cbZky1b/O5kK+tx/GBCw9A+9SLSp0ts6KytrXiqFt7oaP
+QFxNMXUS5prK+Mir/Fyz9Ln6ThXMTaW8Mfy3QcvBNgQ8lPrZevjR23zM339wpRQS
+sjTJawZ4LROAqT0JPcY8q+2M2TME9aKqouCKDHP1w20RJYag/SKibHXyUyODTxAO
+cN4Py/k6luSt9uMev9evrPZQBUDOeqPNMAvjvWAdGR2WBpWGhbd3JEAbiBT6APbL
+taz3K06h3zPdkcdPvms5n2tD6Ucze/PfX4+Td+LI0rMKWMFrQTAvNC288iB0nj/E
+E3+bfPnC+IGqN+m5SRObpHKtIs9LhJr+9Kl54A1rEaYDw3EP1ljK+tKVYNMFERin
+WjtTyPWYkCt/7ysql73RPSDK1O0ixPj/Rt7R3xaJ7XX3H+fx7H/WaDGm8gLjFn6Z
+IKRhHfH3LYMIP7uea4tn0ZOz+QQk9YzOq3iaYvkyXXfyG/OYPVBhEZAvTYXUORx1
+cifEAWrDKgRYfo8TsSLyy+4qD0zPRZzP+naGczS8z3cgYraLweLZag4SGUVKTYCY
+GwpbVaFU9J+LUEtq
+-----END PGP SIGNATURE-----
