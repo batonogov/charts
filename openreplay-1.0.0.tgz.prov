@@ -1,0 +1,66 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1476)"
+  artifacthub.io/license: AGPL-3.0-only
+  helmforge.dev/maturity: beta
+  helmforge.dev/source-issue: "1427"
+apiVersion: v2
+appVersion: 1.28.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+- - condition: clickhouse.enabled
+  name: clickhouse
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.4
+description: Production-ready OpenReplay session replay stack without a bundled ingress
+  controller
+home: https://openreplay.com/
+icon: https://helmforge.dev/icons/charts/openreplay.png
+keywords:
+- - openreplay
+- - session-replay
+- - observability
+- - analytics
+kubeVersion: '>=1.31.0-0'
+maintainers:
+- - name: HelmForge
+  url: https://helmforge.dev
+name: openreplay
+sources:
+- - https://github.com/openreplay/openreplay
+type: application
+version: 1.0.0
+
+...
+files:
+  openreplay-1.0.0.tgz: sha256:a7b018eac384a5011de4ba2f02ac984651255f7ceee29256515a15cd09f6a38b
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqzVmsCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnZnXYb3elTTlO6wsv2DpcrMPuSAOXRhu7MpF/IdL3rdYW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAANBAQAKbA3j3U4Dh6LJx/14jdo33zJsIz
+iuvKX/wec/MBhZyEuKiPoZWLqSMbaSJpBCIUphiSw2i8Vii9itTLBLPoPasmFTFY
+fIC4ksUQd6NweYWkeMzOTopYawyWshc3Y1JuapnhycqkMQmn9WDbpMlHqfNONzqA
+/RtNkuqsx11QgD2orbv6Jw2fxYoQBKP43RA6NSm/LvV0L8T0ieji5MMk9khJSYfC
+uxS7kFIoCC6CLajElRjiq0/kp5nCej+DfiGlVg1cu5mAKg6uF6y3KLJtLWbw37qt
+xP1xSzP+BWUIp9Ntvuzj7n+UxPZt2+bE4kXH8nZX5C4KJYXfgNE1iilOr/EQ5fs3
+96GB5BgqF6uNfrSwodZo6ncb5caekoEwjm4iEjEgzBLc2k9eXUQ/BOANJ4e4N1Nj
+6+mYjuXhHkS33M8o/pH/VcwsWC92BQEmhC1Rfw6lHzedjfFqgPCLWkV4O0HA9ami
+GxAI+apI68+QwQaMqnLJRehZxkLvfmvZk/WPkv+AyYIZI9Tcwaw9ZZuucozEUrtU
+NrgPf/tiMYiSQaqLbUlM4LjLM8L3/L3kFCZlw+BMsCi7MlbhvmbnJGFC/2i1za2S
+E3NabbDDXCfuvVoqDkSGIR4k/IEd3kIK2x7xOlgHceH+UXnLZgCIi4OgtCgOBnRQ
+csapY+nEsTLdckIJ
+-----END PGP SIGNATURE-----
