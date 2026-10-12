@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/gnzsnz/ib-gateway-docker
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/ib-gateway
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/issue: "1424"
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 10.50.1f
+description: Secure singleton deployment of Interactive Brokers Gateway and IBC
+home: https://helmforge.dev/docs/charts/ib-gateway
+icon: https://helmforge.dev/icons/charts/ib-gateway.png
+keywords:
+- - interactive-brokers
+- - ib-gateway
+- - algorithmic-trading
+- - fintech
+- - kubernetes
+kubeVersion: '>=1.30.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: ib-gateway
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/ib-gateway
+- - https://github.com/gnzsnz/ib-gateway-docker
+type: application
+version: 1.0.0
+
+...
+files:
+  ib-gateway-1.0.0.tgz: sha256:e9dd413b997bc907f2ef8bcf7a50a3cfd4c5c36b444505f8434b54d195f5de77
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqzR3NCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn2Rli/UFgg/W1kh+I+MNcBKHBc06vCoJNGXfSWj239sQW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAuFMQAIE8svFwLB1301GQt6gQn18tDFmU
+0rCNcSb1PRRxF0msLOXlfCEJb5rF6p5bOKNRCf4htELylOPTQR3vSmV7qTupi/dk
+uemWulyMiaflTnmbOJzLHptfyPPr+LLG4JHV1RQewuegjsocHx+/MFcILbUZ3/PI
+08dD5N8FIjmW8/W6UHCSbfSASl1d+besr4sSui3ccJJmJjFU63zIBtTfnBDYeIkG
+Ry0qb4gwEN+9Sh/krRYkjGV8nnvJdO4Go7dg1pUuzP7IMJWR1e9u0PqboBAIk6cY
+KKMLdwqjEqUEwX0puEHchUahQL3bUiIaFizEG7BJte5LtE7CmahtoR2aReI9xQKm
+i9lmWzqEfBSwHjo7xLioAA23R1FxtetvjTuHGf8vXG+rl4st3ejE1+cvDo5n3sse
+NDSipmHWrYZzgSWFbbqTaYD8l8p72WhLhq4h9bK3r/cc3odctKysVicqZBxRu+cj
+DX2p7UQ1m52x1FwE1hToSscdC9g8OJJKi5k3gh+XHVbMJJXNJZHQzdASQaK8E8FH
+fGXMUM1Qh5JnBDbEPLknvvIKaNP7xkEAB7npol+yaMfgHhAhAKMXkmqszodrxHqW
+StiKkHI1HrOJzl6HdQR/ujeBJ0LZwHHswAb47BEYULQ91Nw0qIb3scUPFnu/v6An
+o229V992mMPawfxk
+-----END PGP SIGNATURE-----
