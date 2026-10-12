@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: ai-machine-learning
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1474)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/tinyhumansai/openhuman
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/openhuman
+    - name: Support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/issue: "1425"
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.64.15
+description: Persistent OpenHuman Core with authenticated RPC, secure runtime defaults
+  and recoverable agent state.
+home: https://helmforge.dev/docs/charts/openhuman
+icon: https://helmforge.dev/icons/charts/openhuman.png
+keywords:
+- - openhuman
+- - ai
+- - agent
+- - self-hosted
+- - kubernetes
+kubeVersion: '>=1.30.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: openhuman
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/openhuman
+- - https://github.com/tinyhumansai/openhuman
+type: application
+version: 1.0.0
+
+...
+files:
+  openhuman-1.0.0.tgz: sha256:b7e9629c619504b5027e9416f59dfd0133b5abafe4c6833a30b512c293094c7c
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqzSrPCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnQah9195ENwEjXKnrKeXGHNuLoRtZj2mqEc/Oce6cxnkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAADuwQAIaaVBpUx1tC/UdepX7vKO2kPQ9Q
+DouoLdpGy7UAu65lLKmp8AmCwE2+CzO3Llv4L2X1Zw6KQmMcLlOvZOgJ+bNbaJkq
+X0LrWzK3dKkds8M2VCZeqYtY8rEXUvxOybp6CFJuPm4GWJmFb8ILG6DBdZyLf699
+Ludntkt2EZ1X07hVKk0VnfU8wfexAK/n9iloxKRaTwJAyTZteUXQlOKBJywNJ01w
+n+YHv82uVTDQSPn4KIXY6JwrTSdwJ4S+fYixADvqcXt7Xfs7mJdQGBl6LrEfZVLQ
+AV7mBS3xKrjaAO5cgZ1jwBh7t4WRmOEInHFcGBMQudVoauJELp2JjVde+V229RUV
+u7P/u3fXuWlYp+fqZbTlYyrikGym00G15byz2QqgRn5q/JS8EistiNlGnI8LQwBu
+Okz3MQGPO6MQUZ3UILRFt/hJx53VGhMJPk4L3F6B0deZPEkSlOSrEKnIMwgQPD/1
+TdKLFpCI3J+lEf6HU8a1ErX2jMJ3c8ttA5Q1CVB5XRRGgIgh+ojtXWlDwRq2aiyd
+91kIsZQQR5zJh6YUYooJC7yYSOR7XyVDQOfsv5JiETIyEyuxqeJ2P0zy6p7l5+qW
+aFwKVDHwz4sUzoZLCC1Br+AMI+dJnXfs0y/Yb4ReE5z2K8oQtLs7GzxoiU7LeGrD
+x8J8mrOYeD7nrnTb
+-----END PGP SIGNATURE-----
