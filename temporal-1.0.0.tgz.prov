@@ -1,0 +1,70 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1479)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://temporal.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/temporal
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/temporal
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+  helmforge.dev/source-issue: "1478"
+apiVersion: v2
+appVersion: 1.32.1
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: Production-ready Temporal server with native Kubernetes Gateway API routes
+home: https://temporal.io/
+icon: https://helmforge.dev/icons/charts/temporal.png
+keywords:
+- - temporal
+- - workflows
+- - orchestration
+- - gateway-api
+kubeVersion: '>=1.31.0-0'
+maintainers:
+- - name: HelmForge
+  url: https://helmforge.dev
+name: temporal
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/temporal
+- - https://github.com/temporalio/temporal
+type: application
+version: 1.0.0
+
+...
+files:
+  temporal-1.0.0.tgz: sha256:934173e5716ec7c23d83e8ee7ef464d75f87dc8c368f04c598aa10bd896edfdc
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJqzwUuCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnzoQ7/BiiuNu8XmQkmt0+lNmVraYggqqnD7r9NYBZ4msW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAsFMQAMrfYLaqvxuhDEdGlZ6h7z3xhyAB
+txYEQkxL2ZvyMcHJRLvoHD+yFNEaD9iA4xq31Cr6xkeSExUQrOxeVHFNm/0w3uaK
+VtY321iPXGJDteKU7lUpulV42XEMfZERtwgBzU9XK5OSEe/QM+1GJ5fx9s0WwS2Y
+th19KhXQUWzo349JsIkmtahjmNWwuzwbf9f0O6YIXYhuY1m+iAbXOlqOP4Yu5ljn
+m8Ik0AmpneAlR43WfYHF+zWSNWepqWXqAkOonG4webMEqNM4hRjSfhjLSRRnmrHj
+YzZyKmgw/aXVsCl4NLiIhA2+Xn1RyBgjetVphHix9MKYPXdw1jT64OuCt3tjQj0A
+E6gVWkHR2LmFG3sQuZ6LbUuemSXm47sypHdiUfxR8rOsUs1hOMv1g25d/+kmjqna
+t37O2Gh1K/BwxAgat+jox2nuz1CCEhdxRp5Ip2wQ/XicvUO1Irzr8P8mtNwNfdSq
+VjOgYQMJ11ZTVIEsJehpdqTlGIO8Hz8MJGGNFwPrXVq25Ou19L0EbS5jLxzw5tqS
+L5LNIMus5lePcS/qDad8tK4oUN0QDVRsE6HbmeIs5QQj9H53h3v7H4VxVAY3Kse8
+hT7fCSf51VRv4JfhvskUv9faKezKOefLvlvUVqJg84YxgHdlLSJA0FU6Gkne0brM
+xamvjQzKKK96Lecd
+-----END PGP SIGNATURE-----
