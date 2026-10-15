@@ -1,0 +1,82 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 38.0.0 (#1501)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://druid.apache.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/druid
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/druid
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/kafka
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 38.0.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: Apache Druid distributed analytics database with coordinator, broker,
+  historical, middlemanager, overlord, and router
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/druid.png
+keywords:
+- - druid
+- - analytics
+- - olap
+- - database
+- - realtime
+- - query
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: druid
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/druid
+- - https://github.com/apache/druid
+type: application
+version: 1.3.7
+
+...
+files:
+  druid-1.3.7.tgz: sha256:56cb393949a2c9e724f94e532ba7b8e686a1f85470f5136665e0a7f89cc8243f
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0WcVCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnLbI5DPaVuygRhIn1DDygFpE6OX4jb9m7zht766e8Q0kW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAncoQAI6aVp8lFowZxpG3G5Yr0X9GKSbt
+HoRs3bt3cXocGMGQv4bZfpQKHkjfv5EWMN/Nd+/RgOWTUDD+WIBob0FvTrHrD/oK
+RsVKrlbYw102pjoyZ+eMw5hhjqJjmkVpTInCtov7FSUIbsU7Wc8KI+XvcOjqnGXA
+FnoyozBLckWxOFayBkmv4HL9q625275+R4WlrhNWqHh4RJ/IgosnGQxJNmR22/pV
+PtNutkff8Q8xm4zOPM732tdAKa74Ee4Jj3er3j5KdJzKUJEs3w0Pg4P5OG2J/LZG
+n9uD4PdQMGVzcXkS+tcJopHDmF3mjbNrlurUw+6u3EmPd6FVUCngXNLP3MNS1CN9
+RllV4/EvJYrrwzbG3+EPofQ41w19RY25nNo5Toi38F9LapuXEcNcbLCIwksJ56xQ
+lWOI9XluPvptjIUIJMZVfzqGBE9lvAOkc+fxjGLjQrCBoA+TdF7/er4Yg7xKejwq
+kNk7b8GCLwR5aCeYNfdNmuLpTqprwhWmQMVNXrYcQBvxnxhskFjowUnswqgTWvcC
+50aktDQSlT9fiEiuyLtPWvpqYI82t1d/T/pEDGYntP3r9KueLWJr6yvGnvN/CpkE
+cheh2cyfCeELpyIrqsuIDyS5wzf5NUBjq9UOHHChURgSjC4ND4DeGalpyd7eWVsd
+9YFjGDSFOWYInbjO
+-----END PGP SIGNATURE-----
