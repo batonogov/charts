@@ -1,0 +1,82 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 11.4.8 (#1502)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://new.drupal.org/home
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/drupal
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/drupal
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/mysql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 11.4.8
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+description: Production-ready Drupal CMS with seeded sites persistence, S3 backups,
+  and safe horizontal scaling controls
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/drupal.png
+keywords:
+- - drupal
+- - cms
+- - php
+- - apache
+- - mysql
+- - sqlite
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: drupal
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://new.drupal.org/home
+- - https://hub.docker.com/_/drupal
+type: application
+version: 1.2.16
+
+...
+files:
+  drupal-1.2.16.tgz: sha256:33aaecb03ba0c857866237b0f53accec1f7366d385e14ad920ef894412776d37
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0Wh8CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnAu4HZKH/HRiw6KEaEALB3evOIWxi/q+3tGjLS37xYpEW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAQKUP+gLW8gtRctjKxSFuOJe7wl5Rv0Cc
+E/IHQLKQjyNXhWIWbgeG2T6n9kzCw41LziTMEAp3fvINB3Hjat0WtSxHEUQ/TERu
+k85FseykBLUB5BaC5SNTsKu5gCeU5EyHver4FgT3XviboUXBegLk7i4b/VtmwIm2
+meHzn1/0Sl6+86OiTz1t4vpqCWq2WrxkQ4WYWhbY/a82C3WVtbtAeifmSUVJSM3R
+etx6IwbSKs57VU2NbdH6SZ6CfyBbl9wc6fmBe5QxQ4HnHdiYMhjk7wEMeIPhjtCV
+b+awkWvUkGtG64RBXpZg1JmlE8C/Yi4eWIc/IZbL7ptrQJYtxMORi7pW+k1ODnR9
+B539dLvHsA47icptK8NYLBF6nX1MG5IABKQZk3SxCbVwkEZxbbYD4GM6e8lRDhZn
+bqXaz4swSiprQU6vktThkPQ6y3gLrYxVwM++KPV4iy8ajtagDpaY/E8M6xqWyFYv
+/5pdNi57hTJSMfBFXtQXMx2KDHwJeI6Lr88os7Z4bsIUPk5S3OLvh1TSiSjWXywt
+A10Kmk4eLwmkXO4zsgZX1le6KU6QQSF712lQLEuaRJYveD4xsgwDNUEYwGw8a87T
+TZLoiPnWkeSNiCx3i1LXv8sgE8pUMIIZLYL1NiGXrqWRa7G3XyoJ4Uu1OmDfRuk4
+5QhF3Xy/DXcFtWjh
+-----END PGP SIGNATURE-----
