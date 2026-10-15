@@ -1,0 +1,57 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":dependencyDashboard", ":semanticCommits"],
+  "timezone": "Europe/Vilnius",
+  "schedule": ["before 6am on monday"],
+  "labels": ["dependencies"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 8,
+  "rebaseWhen": "conflicted",
+  "automerge": false,
+  "pinDigests": false,
+  "enabledManagers": ["helmv3", "helm-values", "github-actions", "custom.regex"],
+  "helm-values": {
+    "managerFilePatterns": ["/^charts/[^/]+/values\\.ya?ml$/"]
+  },
+  "helmv3": {
+    "managerFilePatterns": ["/^charts/[^/]+/Chart\\.ya?ml$/"]
+  },
+  "prBodyNotes": [
+    "**Manual finish required** before merge: bump `version` in `Chart.yaml`, update `appVersion` if the application image changed, add an `artifacthub.io/changes` entry, then run `helm lint charts/<chart> --strict` and `helm unittest charts/<chart>` (see `standards-check.yml` / GR-079)."
+  ],
+  "packageRules": [
+    {
+      "description": "Container image tags in chart values.yaml (image / controller.image / server.image / app.image / ...). One PR per image; never automerge - each needs a Chart.yaml version bump + artifacthub changelog.",
+      "matchManagers": ["helm-values"],
+      "separateMultipleMajor": true
+    },
+    {
+      "description": "Chart.yaml cohesion: update appVersion alongside the image tag when the same chart is touched.",
+      "matchManagers": ["helm-values"],
+      "matchFileNames": ["charts/*/values.yaml"],
+      "addLabels": ["dependencies"]
+    },
+    {
+      "description": "HelmForge OCI subchart dependencies (oci://ghcr.io/helmforgedev/helm). Grouped into one PR; never automerge.",
+      "matchManagers": ["helmv3"],
+      "groupName": "helm subchart dependencies"
+    },
+    {
+      "description": "GitHub Actions pins in .github/workflows. Grouped, ci-labelled to match the existing Dependabot convention.",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "labels": ["dependencies", "ci"]
+    },
+    {
+      "description": "Digest-only updates are never automerged (charts pin tags, not digests).",
+      "matchUpdateTypes": ["digest"],
+      "automerge": false
+    },
+    {
+      "description": "Major bumps always need manual review + k3d validation.",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "addLabels": ["major"]
+    }
+  ]
+}
