@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 1.14.2 (#1493)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/bulwarkmail/webmail
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/bulwark-mail
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/issue: "1358"
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.14.2
+description: Production-ready Helm chart for the Bulwark JMAP webmail client
+home: https://helmforge.dev/docs/charts/bulwark-mail
+icon: https://helmforge.dev/icons/charts/bulwark-mail.png
+keywords:
+- - bulwark
+- - webmail
+- - jmap
+- - stalwart
+- - kubernetes
+kubeVersion: '>=1.30.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: bulwark-mail
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/bulwark-mail
+- - https://github.com/bulwarkmail/webmail
+type: application
+version: 1.0.1
+
+...
+files:
+  bulwark-mail-1.0.1.tgz: sha256:f9f65faa81dd3aeb3b8aee231c95028d53f507c3d9dd987f4174f73e9c120dac
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0U1NCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnvwZ0fdpKUe70m8v7umrShHJOi6dyO7jPB9LG0zjhSuQW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAfSYP/3ACPwMeuY7Ntdswdx9pfo2b/bLf
+dJkQclYay+13dWmLrq/3t24KfpDgWJUlB9BtzHDeI58W8O3FQ0wH7HfE09QRqsIN
+HT4Yq0Bl1YtGvkQC/iJEg4E84MsVzvI1RGYbGGD9xw6qfOxfqVcleojO+4UhbQFy
+x60IWUXGvbJbVi7MpksIF01SPiy0IKjJ7bAXynP7WnfMoKXPq8Pb3lChFZb0KZPJ
+yc6ItcEf4IZMKwtfjH0KH7qrxiRpdrkteIYezFKVb7WXtPEjxesK/newCubpW6K6
+W17Bw3eFZlFGtsm/GUG7gDLLB90/pjFk10jWSZeyMKT0bGKh0wtAwid6NC7RLpJI
+aI6zRTuYUNt6r5XUr29LWmh168rywoTj7vatjMDkNjoBuN/8L/eI69qDfjDWu5tV
+F+oG6VHAGrG5fHN8DkI3oqhMVIujlyM45wlJD3D7in0NxIjKZZHa9AeUs6a9rvKP
+IWKr7yGXoDcGzgGeqPk32rt8xEZVU6+7b/bqRsmslj2LVJvcG3uv2mz1yPiTOlgi
+v9UVySA80KZtlTeuU1TaHoSkFlS6hW/3914t5xI42PqVBEg6KGF68LhE9AvbBm5Q
+85LAHCIoIJDcJTA2P31Oq/cy11SBbvj1VagAqzjkZrmQMv93oc4vTQobwSA8PsR9
+U+gRBwKx1ff/6i3C
+-----END PGP SIGNATURE-----
