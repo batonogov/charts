@@ -1,0 +1,74 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: storage
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 0.9.73 (#1492)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://archivebox.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/archivebox
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/archivebox
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.9.73
+description: ArchiveBox self-hosted web archiving with Chromium headless, multi-format
+  capture, and persistent storage
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/archivebox.png
+keywords:
+- - archivebox
+- - archive
+- - web-archiving
+- - wayback
+- - chromium
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: archivebox
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/ArchiveBox/ArchiveBox
+type: application
+version: 1.1.14
+
+...
+files:
+  archivebox-1.1.14.tgz: sha256:fa8102338dd4ebabe85f2b6bef325917b06b57fee820fbb78bd3b1fdf96f5112
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0Ut0CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnP0ZCvFDeGaRQNJRcTSUjxZwqtZTJm0ORZ/9h+zV+J7IW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAXB8P/iVSyhuQ7OOpQGOHbDQFg93KxGqo
+NT8PmsMW+laZ+XK+A3ydNtjSk6EuV2rlQ20jm4uC61ravAKPpZJGCcvWS6MV8c9N
+E8T2DI3G99qjbJypHMrtYnNOcsHhPTM7RKO8IW2IZB/YcLCdnaPP8viUD8/8m8Ba
+wrjPimWQINhsfxeaW7KyOx6IAtqHDH+5I3RPfNfEcYXYVb+QzVBl3291VTbGBl6P
+platw1ZvsN5QK/MwOVlC7ePgR/dxeMKmenx3CHwWTpYUAC0rWNRtzq16IOgoXh5E
+h6YMNnDhXXiig2dInoWIimm3/kjKIwtbc5P5qSwajS1dNDvDa5q2zKg2rfktKvuZ
+MPDkOGy9LQC5uCpwMuHIp1B+KQSStzHk1Ews9tgb9LOORpszi7RMbgibhDnWL7PI
+m25Ku28xuY/6+x00RyoselMr23wwrY9m0VwZLS/2y+Kgq+2CbPQBgpYJNajItQIB
+cTVYG5Ian3i7/cqGkGM4yGvmD86UKdRWZeW47ZegwYFjItl9s+ocjfSaQC6bUqCY
+TGt4eJVwAJ1FNjXleSmNg5Fm6DCHGGZ0+z1ahC64yLAZxOQmQq5X6NUNCDRJPPP8
+gA+F+whCpPlhp0jbLX/evCwMc54fnk8bIYfTxIGRDVkM9/GNi6u/pFUNYXz5yz9A
+j+cUv52wvv2SqO0V
+-----END PGP SIGNATURE-----
