@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: security
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 0.4.35 (#1495)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 0.4.35
+description: Self-hosted SSL certificate automation platform for issuing, deploying,
+  renewing, and monitoring certificates
+home: https://helmforge.dev/docs/charts/certimate
+icon: https://helmforge.dev/icons/charts/certimate.png
+keywords:
+- - certificates
+- - acme
+- - tls
+- - ssl
+- - automation
+- - self-hosted
+- - kubernetes
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: certimate
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/certimate
+- - https://github.com/certimate-go/certimate
+- - https://docs.certimate.me
+type: application
+version: 1.0.10
+
+...
+files:
+  certimate-1.0.10.tgz: sha256:2ec17208122b3b3ad27caabd6849f32313114dceb83dbd880446f2b62ffbeb1f
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0VB4CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnVnYOU/RoRh4jvTxAscm3Bmqy9nCSRFWcxFVicv8VV3kW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAj9MP+wYpfk7z5Lepqg+GQOrtrt06M7yY
+ysU1yNlFxIco0mddgwDV2GkKG8bWVvNAxrEPOEwQeok58YFtJrd1ET6uQpcxQ3rf
+9sGDB4p6jEzm8a/kYgBUmAbLSGsuX/SGLX0byWNv284VCG8YojHkiOidu46OON+Q
+BdHKdSBM7onulr9ifMckaGc7SbAdre2ZBahyeVD6I9eEd5ls+gR/dyHWCgPmzvOQ
+caSy6Z+L3FPWmh7G0bRIwHyNBYjlcqzEw6suRHm7bASNpMwpOyK2/Jl7Xiqyx79w
+rb9t3LFv29qM8aHlQ+uPTnkd78bS5auhBi4A+b2lzDYqULXHXI1/nqBxx0MbEtLn
+iVll/+fsljHnMqaoKprja6ce3tFMF/ubB2uET+fdnWPWP1RxflkN4Eb6ZXEIlC/5
+OXRMQr5NqDaeO2/kYTA2whzvjoRgGFTDzNeTBXeAzrLnNhsNfOfLB+iTI6cn5pHY
+K1VT00tj2KgJiLdUnh3QgOM/jJBga/8payIC7KKp/RsxjPMqZ7PjWpVYLnVWTC61
+HuTH1Il7J2P4YcER3U9PHtmZTfKfLiQgQHjP8Srbz1s7TGRs0hWO4jUn8GaLwChj
+dt4U0b2YInfWf2r+C42FbyFi25RRpfFbkGvmCzMF3AlS2X8Pw/JCQHGHt87W5CsP
+GWfqtdllGPr8UQDd
+-----END PGP SIGNATURE-----
