@@ -1,0 +1,78 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/alternativeName: cloudflare
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 2026.10.0 (#1498)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/cloudflared
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/cloudflared
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/pihole
+    - url: https://artifacthub.io/packages/helm/helmforge/adguard-home
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2026.10.0
+description: Cloudflare Tunnel client for secure, outbound-only connections between
+  Kubernetes services and Cloudflare's network
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/cloudflared.png
+keywords:
+- - cloudflare
+- - tunnel
+- - cloudflared
+- - zero-trust
+- - ingress
+- - networking
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: cloudflared
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/cloudflare/cloudflared
+type: application
+version: 1.5.18
+
+...
+files:
+  cloudflared-1.5.18.tgz: sha256:9d2ab21782b3f00d639d888d9221c01969f603c61a0700d5099e0b4233d0fe19
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0VqoCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnhEnjFaIH0q8w4WAhWFuPmQXlSHoJIY0ppFVufxv7xF4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA+T0P/2bux2No7luvEz73DFeEhGiKnfMK
+Z90/X89PXF13juS3e3MAYi5hcaqY5pAnWQcSekscyNSxHaHP0qSlk64ZusQP8+E4
+UppCU7wqvsiVrekfi3tAdsdxvPglgrw5w4iH3vliwDTI0yQsW6ZoSvJGRzQCHIQ9
+MR0anDqkNIroSC5xAGBtfNNO9VkBRFHU6wa4PoofbjL6j4stM7hlsM5DW47Y76pK
+lmSKhhYeEulcmJHqnzaOLKZMViNUrNopgZ+vthvAQjwHSXZL59EYSjxvFiGqowmR
+WKfjcU9CvCFedcm36TmX8EudebJSTc8u5xbmSR9mHbx2DnK0x/Xvr/gL4DrxQQmj
+RGMoOe8kgZ+YcMjMh8oh4X9si9e1N5gAvUcVSGPe5oBJja22SVLd1NjjVdOUaxPc
+RkEcBS11PXmBHZQnokXUzd+APRdha4gOooKWtAn3nZSnMmhacJAizHBI3uhPbK7W
+eFnKnjreePQVRgQZTvzchJezRiiRxTY7RV5IUlHcELpqTzM+Msngb9PhvWba744C
+Su6mi6/Xyct13acAdqlHLel8bQz5PurMNgq5GOUs/ReA1HL+JufV7WuqSkDOuBQs
+o5bThwE6Eix39o7jTw2/7BwvwHa1ZtkL8IYjpON5EDyj3fQl6cuihSiDaKeYJagW
+pCFFX4E29h2Bq2Rn
+-----END PGP SIGNATURE-----
