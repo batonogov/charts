@@ -1,0 +1,82 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: fixed
+      description: "synchronize persisted code on upgrades (#1488)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://matomo.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/matomo
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/matomo
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/mysql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 5.14.0
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+description: Privacy-focused web analytics platform with MySQL and production archiving
+  support
+home: https://helmforge.dev/docs/charts/matomo
+icon: https://helmforge.dev/icons/charts/matomo.png
+keywords:
+- - matomo
+- - analytics
+- - privacy
+- - mysql
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: matomo
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/matomo-org/matomo
+- - https://hub.docker.com/_/matomo
+type: application
+version: 2.3.3
+
+...
+files:
+  matomo-2.3.3.tgz: sha256:f24cf6a749cf2788ddcf0a53dc57e1c1213ad3a11c4791761ea8aabf215fc7cd
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0SY6CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn4Q8/5ut3n8jP7DkEb9DVzsa2vY5lKBSnzuOgpfbivesW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA2VQQAJ7fYc4iWoPh9HZZyQL5gh2iVHwf
+NhA4QaKN+tSp7h0gYmSqBvcdP3Yp1qe/AFIsZ+cAAGH4u7p5a7HMkYzx/QpB9o2A
+9erJSuu7gohzVTbAUj+Gw8d23sH6tb1y6gpQPh1Xni9w/WOJ/u6+I8Kd2Es9BGug
+DdtXs2OUbJCFQHzZBY6V4pKMMn5M6WTZEajkGdZfLAw3Rn5lKGNSk54atAyma6aJ
+9Lu9FG/QX614r4thQ+suYU8EQ3n6+z9srO1rfKXj6jLx9ml5nL/EJWX+BhK1HKkU
+xCstC66Lza7ETX8bKByYshURb8ufCr0zLzRtAFuQeuFbSOsNda2YRcj7QwBOFjnx
+Lh7yZ3IS2NeAAcQog5Nz4aQM304sa1tLinIal7uHOl6tzEdnd9sG9KwDMxd1gDOG
+Yv3HK3vfvRoiHu40TJRcHxbj4tmrS7L/uWUvH5zjtkl+JRjKLL3i13tROs6isL3E
+Fe00db4x0CrNULmtVudtpyL369D+b2/pktcCUFsPQ6i6Y7z8DlWdvol6v9gJlL5O
+CTHPIh9iGlpwXkKYElPg+mMhBzPHFGhcTW6Ou2PgL0se0C4xRJiEHMByOSaSFr8/
+b6ObkB93b7Du7Bdyxmw68gdU2/jmfrq2Y6f20scisQdxOJuqMHpjEPPulW4aHnH8
+uN/euGLyd4S4uStS
+-----END PGP SIGNATURE-----
