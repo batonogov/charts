@@ -1,0 +1,78 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 2.4.69 (#1490)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://httpd.apache.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/apache
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/apache
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/uptime-kuma
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.4.69
+description: Apache HTTP Server Helm Chart with secure non-root defaults, custom content,
+  Gateway API, and optional metrics
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/apache.png
+keywords:
+- - apache
+- - httpd
+- - web
+- - webserver
+- - static-site
+- - gateway-api
+- - prometheus
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: apache
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/apache/httpd
+- - https://hub.docker.com/_/httpd
+type: application
+version: 1.0.7
+
+...
+files:
+  apache-1.0.7.tgz: sha256:788492d11bfdd05b51e09c074f146999e8a45edabd32e91ed3432b6e5413f3d4
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0UelCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnqYsjSlrM6UxOGkqEdMPQw6yjib3ku6/3t9YeA7NP/lYW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAY74P/Ay3DVXFzdv8lAXNHO63q/cIziUS
+X0My6YPso/aDC9QyKDQc/6JMgybqGuP9PUC2XNqotcSE2oT2TDaKrZRPUVJ7Rq30
+lwxh3EiHi9zGEB/0HTz4Xt+UORUFOR4GEBt96EfpcCEBiLTzRS/qccU4SPZZVdQ9
+cs105CxPumWdi4ZYllnrJw3qpyEgBPgbQ4veFEGEvzChCZcOfL0votPagZ3p0FXH
+y8xS2OSToy2X2tY4NEHZ6t700uU36CCGbMtl8hgd9wvmnHReDIxI8B1kH9SdArMP
+yZe8KVnGmwQNuGF9u1+SiOEOmvH6WDhIXb2iTaXL9Kjz5rQhOPeYyGS3vL2h1j4L
+rKVSrG+ksIazbCwOBO7PdyM8tyzcLne0AQf3RoEliTo6wdCqr4Wn7DjPYf6T+AHw
+CTlvsg1w38yROYKUJdEcOeK1lwcMI0xmymxCDBdTlhGxhHRid3pIltYhu6oxzt6u
+9Gp5dx1dzNPQOdfZaHCPdyh6YSEC9BX6+4kunGz++TTOcFFhkSPO6hJPl6sVsJG5
+i2c8ZipG3xQYBAE8rlSjSizM43v1C9VUdjgCG3V9WE3+yjj13DNjhRV4fAfBIKmb
+7MbP3j5mHTERiPl3OOG20XxEzKxCAw0VYL3RCA9qTw701G1bHlbPjjfSbLDB+BeA
+QgsDpWhvIBHrIOZs
+-----END PGP SIGNATURE-----
