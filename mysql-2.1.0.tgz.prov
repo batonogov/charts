@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: added
+      description: "configure clone init resources (#1483)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.mysql.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/mysql
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/mysql
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/phpmyadmin
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 26.7.0
+description: MySQL for Kubernetes with explicit standalone and replication modes
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/mysql.png
+keywords:
+- - mysql
+- - database
+- - replication
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: mysql
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://hub.docker.com/_/mysql
+type: application
+version: 2.1.0
+
+...
+files:
+  mysql-2.1.0.tgz: sha256:5ff03c52f149ab540c4309f2f70c8d29b81d2b1ea3fed3dfd5368596652612ad
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0Ns2CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnXWbLIL/+UTXwd/w8hjC0jWMsyzW/G53dtDs/ZaVAUHwW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAASdkP/3l7Qut6s5eIZEnlod5GcJ6mu+CK
+S/RV6kNtswegu7REsDlxSd0Q6I5PHRDW9EGAcdpZ+u4+lX1puWVauy6xIV2ui8O3
+oBUdWG+oX4Ba2eggA7Wrjn1SBMhUzW9vNJnoYcq4qO6Fw94TkiDGJc79VJm4jju1
+PKPq8KIQesIkd6Xo5xWnmyKXmItUbGJONyZp7FenB0L718MlyrSMg/alwGd5DVRf
+RIt3kJRMfQ3Yf0YiBq04YkMsPvNSRh4qyzPQamptA1A9cWE+TXbtVOZaUjuY2vAA
+aWwkCAfYURM0IFmyKk8WHeR0tIxGQE3dczZwEW9w17hX2oRsWFDCOArtHntmk/06
+QGhQvqXyfF1hrcRFjOqR6qrFQXBIum9PEZ2OUn90dGFc4ZwkxWZO53stEO+4hq19
+KmRryDqUtqa0E5CeOtLzmlJFIqMPyB+vMp0IBl32IGnn4LF/xPSooQXH0AODxFW3
+MjG37Vry4OJHueIUz++KDhOnurlUR7Y+/79rOxvmnH5dfQ1mfrvin2UHDFyb7xZI
+4xY/zAjkF0OcDUdFqaqBoHRode/SczTWeduxhvKW3J1x3AiUhFN1IutUOhjepYFB
+48zSOJSE991bV+EHqty3BMmyRpvetgMK5YghO4dvWw0v9p/m7P2IwuuPZGy83GnN
+s0f4GXapXtNmcdoQ
+-----END PGP SIGNATURE-----
