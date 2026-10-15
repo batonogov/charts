@@ -1,0 +1,64 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "BREAKING: add chart (#1487)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://stalw.art
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/stalwart
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+  helmforge.dev/source-issue: "1481"
+apiVersion: v2
+appVersion: 0.16.26
+description: Production-ready Stalwart mail and collaboration server
+home: https://stalw.art/
+icon: https://helmforge.dev/icons/charts/stalwart.png
+keywords:
+- - stalwart
+- - mail
+- - smtp
+- - imap
+- - jmap
+kubeVersion: '>=1.31.0-0'
+maintainers:
+- - name: HelmForge
+  url: https://helmforge.dev
+name: stalwart
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/stalwart
+- - https://github.com/stalwartlabs/stalwart
+type: application
+version: 1.0.0
+
+...
+files:
+  stalwart-1.0.0.tgz: sha256:59e8409232ba034331269248f04641266a93e3c40d058cab9f293f5a1d740bbd
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0QnRCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn6BC8Dj8397twh0Su1LMc86bYdPPpzv+qaYR74LtCnLEW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA0h8P/iRZYxJzxPRsu1MjBkL+UpmwAJSV
+1k71tS4k5lGuPd/7H2UgWoweMZ/EdBbuhdYAt8AGnPNUGFvdoKudLRmDLMHSeCWI
+n+UEJdEjT0mJ3OM3/+KJC/TklSESeKIxrocq2Eoj7dk3roIak7migDlcg5mFKI/0
+4gj+JR3/pvv213mfXQ0/5c25XStBDjaIHz0EZ7zDCW3wNONBqenHyMGPVLrC0Or+
+i0ZPOV17Chhlf0cJ2fTndrZiEl1KL92FJkFrhtHlvSBPn3zoUlpFPCTQNp0cfdIn
+paAwBDloU3tF9VbS3zJ1wigSQuw9bMWlTkcE9Kzf2dgn8E5ZnHkzqkF9t/BlW8sa
+Wl0cnF9o69//QMUPvP6NNW2QXshuwIS2Jkx2gR9Kf2RChUaKH2M5aEi01EhDq6g7
+hl2H7NsYwl9YPQ10kG6s/xK9DsBGCmN6DJe07+pq/DNWksqdXapfjq/lFS0KMts/
+CU8iTxzchuaCThYv5AScZMOdB8YkIOt60elo61m8CzecnZnRGCRfL2UKAE+vNE88
+m2zwPabDO6Olqx+5tWFPG4Y0CrfyRemNgbkuIZGY1kP+TZSxPhNBMihRs7cRUIDj
+jk8izhVHdPtAlaQkttrt+aZkDK888mcUo5VM1K10ARSYV6Bcrs3TkX82EULtGGoL
+7tvslbIw2NBw5yMF
+-----END PGP SIGNATURE-----
