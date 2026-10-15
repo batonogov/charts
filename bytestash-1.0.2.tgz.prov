@@ -1,0 +1,70 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 1.5.14 (#1494)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/jordan-dalby/ByteStash
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/bytestash
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.5.14
+description: Private code snippets with protected first-account bootstrap, retained
+  JWT authentication and persistent SQLite.
+home: https://helmforge.dev/docs/charts/bytestash
+icon: https://helmforge.dev/icons/charts/bytestash.png
+keywords:
+- - bytestash
+- - snippets
+- - code
+- - sqlite
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: bytestash
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/bytestash
+- - https://github.com/jordan-dalby/ByteStash
+type: application
+version: 1.0.2
+
+...
+files:
+  bytestash-1.0.2.tgz: sha256:96767fcb2b0b2b97d07ea761e15ba2badc0d5295ab6fde8525ac66205a80bb1c
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0U68CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn7xofnGObngwS/ry6rpYOBcZBiBwiMrg8B8Kw+SH7oS8W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA8d0QAJQLLJjf3kkXEwBEsv9SU7eVVO6S
+ET2X2BJ+qnbtYKAlmtGuIx5IEmbhIhxtL77opZ6aJDTBU36QXsjQC8dUOOaaWr69
+YSnn8hl5WHxw9/NcoSFpvt/wSUmH+eD+0GjpRnbpqZjBWLwwnXkUs0+c4XHx8KYA
+guDDeyio9rXuwrNUyEQYtucbybWDXbAvcFVQWbi74G56jie9TMzJyX8ejtsbGRUb
+X+vRxtX7G/Je7zBjgU08xuhEpkx2mm7RB7eJ0du8BeUndmurECzSKaFfk6ChDzy1
+JgFxMk22A3Wdmuy7KO+C+BuKwnhoKeajNLzNDtiBtFBcPALNg8hEUYJl1b/V/PLj
+JPYA9jWaRFJIzJA794lfzKvI6toQqhRRVpeL9WFSqahsEcMiERj7764/GpY03W1p
+zyBCBXhOBbiqWIo6JBKB01LHOSY2Bpa5HfZJqqE8XCTN8xMWjlRJl22lE5B2+wRd
+FTQMuKrcM5wHVcu0XX1ZtPwrz19hJzOeiPNEjTp341GPyPj+fER2XM8XeBZF27C/
+A9/NI0KmjFDmHsqb6NdexwLydlzBtwvb1lDNVPjCLA5QTWrEG/rr+YWDy/h4/qt3
+DT8KeRlDx/KN+g8DaRXg+of0OK1BCj2EnHm1sO6jMl1nj1qEUYcpfW9d9RxQD5H6
+pw5v9e2f30aiwccf
+-----END PGP SIGNATURE-----
