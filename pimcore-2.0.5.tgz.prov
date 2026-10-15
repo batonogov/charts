@@ -1,0 +1,91 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://pimcore.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/pimcore
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/pimcore
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2026.2.10
+dependencies:
+- - condition: mariadb.enabled
+  name: mariadb
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.2
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+- - condition: rabbitmq.enabled
+  name: rabbitmq
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 1.7.2
+description: Pimcore data and experience management platform with PHP-FPM, Messenger
+  workers, and maintenance automation
+home: https://helmforge.dev/docs/charts/pimcore
+icon: https://helmforge.dev/icons/charts/pimcore.png
+keywords:
+- - pimcore
+- - pim
+- - dam
+- - mdm
+- - dxp
+- - cms
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: pimcore
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/pimcore/pimcore
+- - https://github.com/pimcore/skeleton
+- - https://github.com/pimcore/docker
+type: application
+version: 2.0.5
+
+...
+files:
+  pimcore-2.0.5.tgz: sha256:81ddb7ef648c2b93d94842ed2cad02ade34c9ce3d8ac17f9b331dd6e7d88c4a0
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MAzCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jnos9nNnhGzgWWrhkIPPughY14jgRMjYz5l52N+3zjVkIW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA5LgQAJcLTI5EmyujymW/125ABkxv5BVv
+tqHUn1Sg5GSfcI2POHa6LAy9jrWLpTZrgvPBtoPR1gN6TtsNfKQRqG5VJcKaqeGg
+SUotWdUus1E3PUeVt36KHiLykSuZj9GsVGjTodbyt0IzLtpqwfPGKvZycGJhsFHA
+nHWzjnIhpOunaYjz0voZouMewobAK8yJNs3uCvkwNsCoDzbyKbfz1CCbyD/wUqr2
+lrq1v3eqRCDsodG/nOfX/leNDe1DoXqSrqDyWyarjhe5Ut01DqQD4zIOgcMAsuzt
+MLBsRGNt/YBfY8bJatfebFhNOV4A4+YwBeFm2mY1KNBOfDaRsOqWvpFEGkxWCVT9
+6VpskMUh35VwfLiK/hn0ScUuSMYF5jPBzwqzQ5p3llz8myE6YDh7qEzUVnRdxtR6
+MKvuYYkvjvOUU4pzK4coBGpxmTQrU565Frq6dicmafiwaOpJbnT3QoDzt+OnyS8q
+YPMtTK98QKOoTZyeJtenNIGSOwqDNERfFUEwECqJ26HP1gJL46MhZ5TKt6zKO8a8
+McHH8krXEesvlIAZmYZAkpTO4eMRIdaL1zUYerZMQH1pkXgAUFAUcTUZe2CnH5sl
+7gM4Str/D1xNgP/00GRk5WaLUP8r0X+w85+PpAnDgR8ylviF6PokagSWmH8DBnhT
+O7b8AXCdL4EXp/R5
+-----END PGP SIGNATURE-----

@@ -1,0 +1,92 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: security
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.authelia.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/authelia
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/authelia
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/keycloak
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 4.39.28
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.4
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Authelia authentication and authorization server with SSO, MFA, and OpenID
+  Connect
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/authelia.png
+keywords:
+- - authelia
+- - authentication
+- - authorization
+- - sso
+- - mfa
+- - oidc
+- - forward-auth
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: authelia
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/authelia
+- - https://github.com/authelia/authelia
+type: application
+version: 1.5.15
+
+...
+files:
+  authelia-1.5.15.tgz: sha256:8892bac4434787553c9a2ecdf06e2acfa84d077bfb146fb701710cd9c4bf04a3
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L4LCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnBeJYSxPZeDIi+2eWnxJ6VcPrhFD0tZHsu6wYj21IGdQW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAw0kP/2VYRiMe8twct8tVd5hQmL0Eq7JI
+kHnjn5YKihZBw84BCnYX4R+FOOC/nSOnSDHWnU4zzL23NNbCsOWWScdueyINd/me
+/ZSctDa8hn/Ktu95DQtuHEV/XYjAjTExFeLGWBTZIxBEKI78jNMyekqWZUJcUtzk
+jf0T8FyVx+rKMEz0BkbCKBM2UBW0AEN+wbgJPFbBs6kSMtu8+m6IfZGWME5Q/G9j
+uXpdA2iDX6q783c4fKHdv2maoEHmSlkNRcftXeDR+oBxXSnDYS1hWWa13B+8S+MN
+JnuxFDGkpFj8chtjOKbzcEQ75qJeIESTuA0zQyYhM9X4wXiJrCirCKx+tocBUIKO
+By5Ms/rNVqPRw20bnj59GS9vrd9Amgfv5+CHZJCmnXeb5T60oAK2BOPcr+OFnpQU
+DTEm2WNpdPctBF1btZzj172qrALGCIkgRr1+RyfdKXDpcCnWPKZ5htBo6BY28QLi
+41wDMOqQLhfy4prQIcoBv4xROeRooJ7gWyN7/P+O2qE/Oltcu1R41OrEx+SepEGD
+S61qOhfvLEVxRF6nGKqyFll7e2kvxDN6uqG7LvtALy0/rywFkdTXDkCfT/8Nus2e
+wuiUwC5b6wIZv0njKNsP6v3b2xlw5XQJxCJgeZsmesxfdG/qedaqrYUq+w8LuWeU
+xFkbwlEod1rQbx/l
+-----END PGP SIGNATURE-----

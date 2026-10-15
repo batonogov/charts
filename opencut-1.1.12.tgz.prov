@@ -1,0 +1,88 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://opencut.app
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/opencut
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/opencut
+    - name: Image Source
+      url: https://github.com/helmforgedev/opencut
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.3.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: OpenCut open-source video editor with PostgreSQL and Redis HTTP support
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/opencut.png
+keywords:
+- - opencut
+- - video-editor
+- - media
+- - nextjs
+- - postgres
+- - redis
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: opencut
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/opencut
+- - https://github.com/OpenCut-app/OpenCut
+- - https://github.com/helmforgedev/opencut
+type: application
+version: 1.1.12
+
+...
+files:
+  opencut-1.1.12.tgz: sha256:257f55184fcc61c7bf6803c0c43955eac0451048dcc28d399abb57585b35274c
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MAUCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnarRIwB6lfRzEK4cfWqn1qfyFEqjL2Tm9LBOwfs9HziIW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAUSYP/39Lmjd5TjWN5JK9XvWlfJ6Hyu3e
+WnBNA0sQjFqrQiAOAaVyC1OjFdAPIIJCP7hTdqxDyTgIh0bsh0O3PwlYucx9V+DN
+YsEQcFLCrxlFP4SM6WHIpaualbA7+J8yNNK2DXCK69nSqxHMlGix1Zko8x679Rkv
+GEHbDWZlD5PCBe1HO1nJqaU8a07sQ6iJzQ4TNBdJk1qRFFkgbRRvwQDT9gn+6yWW
+Tay8sDiOoIcFoL53Fm6wnZuBQ3kEYg5C/WwSqhqWC5zRDjw9xZUcU0vnEyD6brsh
+SRVax3x4DgoD0LWb7knqxbC2uAquJMcLuPS7ltza/kZH5dlIbbLpC2u70+5WSZka
+ba/KtK5vuEdj57FTHhWzREkvonR1LsJG5XSuePtd+bVMyHXyLA12JzZS1Z/eIkgQ
+RRbrmd/YQ2WgR7n/zizIu6IUKjQRlxZmha8og6o3Avj9V5WKAPyFQKitRmKsuW6k
+FpVeP3aeIx+aRAEOV9/R2iDkDEbjOzxbJP7T+OLSwXx0fLM7KVblh1SfJooEcFji
+2+ErY2BhcJZ1EIMD3maJj47jBtMwMnq8lcdrp906hn9dxqhr8Fn11HBShf1f11ga
+eIHQaCG74Fc8YWK9nrTuBqEeqoZMjpQ6TbvnZ+Z5mjduoN1VdCp7ADBjCk6ZKxgg
+of5gdVoeKIrJfyXg
+-----END PGP SIGNATURE-----

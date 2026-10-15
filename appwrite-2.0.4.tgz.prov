@@ -1,0 +1,85 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://appwrite.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/appwrite
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/appwrite
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.3.0
+dependencies:
+- - condition: mariadb.enabled
+  name: mariadb
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.2
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Appwrite self-hosted backend-as-a-service platform with MariaDB and Redis
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/appwrite.png
+keywords:
+- - appwrite
+- - baas
+- - backend
+- - api
+- - database
+- - authentication
+- - storage
+- - functions
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: appwrite
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/appwrite/appwrite
+- - https://hub.docker.com/r/appwrite/appwrite
+type: application
+version: 2.0.4
+
+...
+files:
+  appwrite-2.0.4.tgz: sha256:c397ff8f50366bded08a6da17f91f5ec7305bb7f5354112a3951aa7d95fe3044
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L3tCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnNrI/b0MfOGBiZfndrmMjCM9MPKdX1iB732eFbCojZbwW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA7d4P/AmsGbtDJ8iD/TyLkIMMnVM2FteP
+qIBWHRSMemxnKId37fWAfJIyw83JNBSjXv2+lgpXxERbG3mDYC/rTp2nTKr7uOcl
+NPUiOiZoh74g7wB9YUejd0LuYoGsE+po/bS4nA7sLQDWr+w3Kpe4Kiz2iOoK/8we
+fSI2IMBfsXvtgwM3Ocwnx//RorhnLjSUcJjljYRBNOkzQ4+sytL46UkmOtdvUHnv
+Zsavw3J9b6sZ6xtuDY2zctYh0vXF+A7j+xYf4vBknEqs1fxyDKte//H1hgGZRJDt
+GtdBJHhhWSw0LlX0ISqUUYC+s88m4+itXFBr1PPazwWrsRNi2djr6O4TDZG/WZS6
+HWETPuOhOTjuK6xmiyF8eFivKbAd4sS2MbQfgZt688cL8Uc0UJ4r5TV/ZqrNUJgR
+Df5Q/RQbJRFYo0KLu/lDb2bPAsgjj5YT67GbVnM7fPQW6mKgKhSu+BC7UbGAKql6
+gJcDrQ27jzXB30wXKVSpt6WnVsPiGi334Q3TZsIYEp11rIdlExe+y7avoXFe+XA4
+MAUMEQohMO2KSrJvyZpTS0YTEIn7bCmA18LqdiUJ3gikxzdd0dXdrk30zd4KmgND
+v67PUWwbsz0Qzg5eEJcRJIfs+rDIktmREcAXcQuQYurIdAyqPEj3VwGzJITY3bSL
+Ml8w2adI1qv9oqs/
+-----END PGP SIGNATURE-----

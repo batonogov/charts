@@ -1,0 +1,82 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: ai-machine-learning
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://webodm.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/webodm
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/webodm
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: beta
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 3.3.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: WebODM aerial imagery processing with persistent workers and optional
+  GPU acceleration
+home: https://helmforge.dev/docs/charts/webodm
+icon: https://helmforge.dev/icons/charts/webodm.png
+keywords:
+- - webodm
+- - photogrammetry
+- - drones
+- - geospatial
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: webodm
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/webodm
+- - https://github.com/WebODM/WebODM
+- - https://github.com/OpenDroneMap/NodeODM
+type: application
+version: 1.0.1
+
+...
+files:
+  webodm-1.0.1.tgz: sha256:4b36ce18f33f8c5f56ae84d8e1a1cbd150992d1cdba4e34f0566f039d844c379
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MDHCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnKXF1sHRb5IE583tWvTHiOb/vn2bZ+gD1RrFhZngjMgcW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAkR8QAMhsn8Mln7bpbgGRBP0Pu+mlf1JH
+o5/GPDCGxEX9p7ZGkx8M+NwsNyQIKp1NyiCMTuMIIfIZZqRy5Fi1DUpRG40UaNJo
+YaKHUFyghdtukxH1mOT2AmKgvbCNoYkKOy3unqPUTYiJSigZW2zKyBIe8QDap3I/
+eh86H465BEepe4VV2get0Vfni+BG6fFQ+TveHe3THdRHdTJAtdLasC8/X8Y5hx8D
+ScUoLczts6atgfVbjakofoZD0YdyLiTG6EAtgem5gJ0HEO4cIusrAabpaw1yIqMy
+0j+6XtsKB0iCZYEDzTWuf9MMr+TOPKImmYKSIvLpHd02UO405GrsObr1ryiVXV+Q
+cbi7OZBFaL0tYDwdd0MoQcm2k0NzD40wL/tJ/6jKLZ5MFDLyZARLPFOEd4zVyeiR
+NFXcFIyjbligrBNJm4/KVzATkF7xCvHWfUPUk4l5VQplyMVtbn+dc6Clu/S/td/o
+pYaV/RWTwzaSTmOsU1tmpEolV3MxdhyPza70Eo0KR374Kq53m5+rRGOS8aBaTGSa
+KK0U32zpBE/yyYa7t20zXI9ZU6lrK96YgsV2bph82HoIHWRpPIoIRdrBUqWyd/J0
+doql216zq2B0ohPxGkB/waui6AERbDXnaGqROqQpq6/nQGr/IAiab5e/1yLuB9Fc
+w6XOpDJtm8+drP/t
+-----END PGP SIGNATURE-----

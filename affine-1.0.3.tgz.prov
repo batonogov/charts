@@ -1,0 +1,77 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://affine.pro
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/affine
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.27.4
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: https://repo.helmforge.dev
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: https://repo.helmforge.dev
+  version: 3.0.2
+description: Collaborative knowledge workspace with private native onboarding, pgvector
+  PostgreSQL and authenticated Redis.
+home: https://helmforge.dev/docs/charts/affine
+icon: https://helmforge.dev/icons/charts/affine.png
+keywords:
+- - affine
+- - workspace
+- - knowledge
+- - collaboration
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: affine
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/affine
+- - https://github.com/toeverything/affine
+type: application
+version: 1.0.3
+
+...
+files:
+  affine-1.0.3.tgz: sha256:a7c028dcb66f92131c9f2f7baaa1fc54f5e7d4ee668621c2a044e57aae5df598
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L3QCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnWwLIoG/oYpAcIwttkNvO40DO7ApfEAxfHEpTQPB8TFkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAABsMP/A/xl8xMUCW0GMgJzKQS6PbmOpdA
+3yry3jiGwB9SIEf2SZ06Ttr0J83foyPXGWeIciXVNgkCpybCWrwAFWCPqzPzd3ke
+9YTnPa5hgNyI++RYRGy7CvzkPe5zx7nN9S3F1scPu/6Bme3qGpmjVdervNAfkZeF
+U7hONEthIZM3r8d+JOCYLb6+yogjjBkSawQCG5QeNNXcBUwWiH2U/AMp6Fxx+iUq
+7yBgv4IkpfK1J7eL/n8bCUmv3t8eIe8rmCYFZlhhrkKDfg3jrVjHruU6ZlIfLya7
+XWVDN9bNw0Km2ThJx9+UiCL7jAuVTD8DPJjalzJ61hb78N/Xb45/8wdu8auOgIa4
+/gPggI8Ty/HEZ1+Szh1iGNDhX4A98NiHfZ7w1EXsaH4dEMJIIk4njsUerkbvEkMC
+JRF7PCvjuvBJwKc9y+TgV01rrX/ksCytLxe8/7PyF8bWbmZx8ZucwHFRq3xbzIwF
+61NuY0ZUBIP+vEI9uMFBsncUGnurzU6Sff8K1SQwFjzxsexnyZA4qbMGqHxncnLS
+ddlpfONuNoupXh0E3KSzgerHrHgYvXtbNml+cBn/1DhbcK8fSTS09SUWZbna4euj
+JYfoVzXwAtiMTJlTOga1OcDd94nE9Bi+MdngNkRfDvGQlP7kGLsPL3D/d/114HBN
+NQVZz0zNqvK1M8Q2
+-----END PGP SIGNATURE-----

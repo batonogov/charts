@@ -1,0 +1,85 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://wallabag.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/wallabag
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/wallabag
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.6.14
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Wallabag self-hosted read-it-later application with PostgreSQL and optional
+  Redis
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/wallabag.png
+keywords:
+- - wallabag
+- - read-it-later
+- - bookmarks
+- - articles
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: wallabag
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/wallabag/wallabag
+type: application
+version: 1.3.9
+
+...
+files:
+  wallabag-1.3.9.tgz: sha256:a75c4241c3d9a31eb160556d5d5f97cddac104c1da9fc9b02f0b8b6cc724d70e
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MCkCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnXspxYszmZETmxfrv8K7hp9NPHSfjpbg4d1ZVyGd5mgAW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAUbAP/jZpXE16PUvw5FXp4RhGGNma6IN0
+O413o8wXMqj3E3RwPRlEq8DbgGAN9Rbp+J5veQc7I9/EyY4Fhq6UM9A+dD1uO3i+
+viopzM7IeNjukBJorgxPKdpROGWDk7CTdJUZuCFl2oGAKB+VBfXUxxEWl1btXNIE
++niWZRUXcxcX7HbTyGkRjzfPF8dEu1dOpI5il2NLdKUGAt9weICTTjNTVEIN/sd4
+lg7hubDVlh7ps4j8H68vzBKWzCEl+WXFy78gD0Sl3fKlP/vplzlTYptXUWf1PlQM
+o/7RaP6+hZSQk4CEM8c3PrNGwKdIxiiC5H0K9uNzjE+2NuHBSaLeH2oMWL0cwUUw
+UHprGoirTmKOa9N0aUJEHuX5SG1ZQaWeMYQuehwqRaJg43mAnEUhyIz6JsRknKky
+BLLy9ig63nV53ksKBlkHCLfzRZcaE8O+3TlJn3DxAtJ7Wb14I0SeyPpEFfFoTMBs
+oxpgAnIm93gQlVWRIxNs0VnoSMcLwd3b3BoP6FzPnhN6Lkdogndlhcg/SUGlBtSR
+eeKjBQ8B4xOpfPHEhn7gMaorFMCOaTyzCSaaeWDFZ2Byr36ZrQfqDAdYnRS9Oq/p
+3m/96MsLuWJJ65kZ75I4wzV5FCmXAu44AnjcB5GaGc1MbLNuGtkRVWpJxixKajdZ
+PQzstYqe+f55kqU7
+-----END PGP SIGNATURE-----

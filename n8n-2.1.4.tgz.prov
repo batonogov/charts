@@ -1,0 +1,85 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://n8n.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/n8n
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/n8n
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.41.3
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: n8n workflow automation platform with SQLite or PostgreSQL and optional
+  Redis queue mode
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/n8n.png
+keywords:
+- - n8n
+- - workflow
+- - automation
+- - integration
+- - low-code
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: n8n
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/n8n
+- - https://github.com/n8n-io/n8n
+type: application
+version: 2.1.4
+
+...
+files:
+  n8n-2.1.4.tgz: sha256:138019240456bd63153fcb2a37540fb935fc861b2f87c0f702c365333afb5762
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L+RCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnhRV2+mgnQzwDsZ6nMBWUDbFOge+xMknDwPZBcH9TuM4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA11YQAKg1XN3PmjIxuRPsxENhcfbUde4X
+hboN/s4bDLFMa1w9iZUOvPMU8UfdS2SA+dSB81+thIfPv7GHEOTV1W2ddh36jQ2E
+t9SQI0xvD+CIa3lMS38kwRAGmCGZW/ytTuvxJBtIY4x7GDA5CLu1m/wZoB/ZAMz9
+EVKsT9Fsqr7VcXOQynzNC6hvVU+MP9JRhQ2q17jDwlHzv8KpFavx8rINWuwIFvFK
+qeiixZ1Rff7BdHHNLsgwhZXLSFhD8gTeCJyWB0m/wGpjoTMmco9ZrkDGPzbf+AdJ
+t0gmu9hLBinWWmF/Xjjt5mkmmc4aIzV9no9UmkTxZ5zcqzM+UQgdWjVbfFFWISvo
+Sv+1GdMo6vjQswK4ya57BXUWGPwCZb0WMS+c4kjI4LBfoADxfD4YDn6oWhP++cgU
++nhNmFUsFR0eLMtFTcMAnv10V4cT5qTgvZaLy6VSeClf8b0FlTpVOK9Hkao9H0lU
+V5cpeet9warRyXYOAJ5XwLuodhUC1PPQrGwV5leZX5pcdV8vaTcIKFAHZFsGw8G0
+8egC1reOry/YYI+HoQKbwLHaS2qaI55BhmjxMxLucm6CTKRqV+8ZFd+Mo7B3E7ay
+v9wazmBI1S/AF+trXKVhZthYcVHXoPEnmICT0q3t7yOLAOBDQwJMTWSkSKrNA/hI
+/imZKOho8ZaTftDV
+-----END PGP SIGNATURE-----

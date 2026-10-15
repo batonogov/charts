@@ -1,0 +1,75 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://twenty.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/twenty
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.43.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: https://repo.helmforge.dev
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: https://repo.helmforge.dev
+  version: 3.0.2
+description: Private CRM workspace with native server and worker, PostgreSQL, authenticated
+  Redis and retained encryption identity.
+home: https://helmforge.dev/docs/charts/twenty
+icon: https://helmforge.dev/icons/charts/twenty.png
+keywords:
+- - twenty
+- - crm
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: twenty
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/twenty
+- - https://github.com/twentyhq/twenty
+type: application
+version: 1.0.5
+
+...
+files:
+  twenty-1.0.5.tgz: sha256:b7c98f116710990569330768d953ca857382b454b604e100dc3b01f600ed098a
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MB7CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnZkYrf2zR6iZ8z/znQHdcsSI0u/RMOXAsAup4Fic1fc0W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAllUQAKbgy/s7zOkLFtWvCg9rOhT2ODn9
+kqniXKRsG9UfgYf1TRFGtivoAG9ALk2dYqwTNICGucGRnMZsbmE69zB0bkl2xPov
+C2UAxGbZ45YhbM4N3WjR8pSa5LHx4F8b1P/u0AN0V9jypxAD72lbADcgBYg8kl6+
+2wrDKx2qraJymiMlgYOLicK31yDdr4lXCRWiv/0jTgg8uO8Y0dmErhK8SUUAEisj
+4pznR/CPCChenuCMPXqdKzEOZApEPXJDXBEryR+HGbD//1wtb0jmv5BW6DcY71zq
+H/0yLbNHx7tjeASK8gnuelvrMibXMIAmQck4Zh4vOmxTHoVSOw0/8GGaSwgtCVpS
+PRW5oHE/CDmcsl+ljFzlFSWM/bPVR6REXpB5bGri8gwFnp2LIuHyiCCaowB0IPYH
+5lOKmgX4utFZbBx633qMvimJOl0YCjKLTJWfhbr/5u1jCQF3EFCq2Tr+5QhzyvG2
+y81ioj810Ty++l3juza4Z4kbaCrBjObV41mTbOjgakJ5Wk1tdLPzXv48vtij8kD2
+az3AHP21PnZz4dBC03eY/HrDT7Sk/bp5BN1LUltbI/azfCQfu0ZeegQr1gPuQY+X
+xS6fmSzBj9tPm4HgjOqzthBBasTQ0z57vHWOTHkEcR64w00UdTHiTE2vxAijJZVu
+TWOSrlCOpHStcDV/
+-----END PGP SIGNATURE-----

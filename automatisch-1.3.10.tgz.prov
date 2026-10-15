@@ -1,0 +1,81 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://automatisch.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/automatisch
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/automatisch
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.15.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Open-source business automation platform â€” self-hosted Zapier alternative
+  with PostgreSQL and Redis
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/automatisch.png
+keywords:
+- - automation
+- - workflow
+- - zapier
+- - automatisch
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: automatisch
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/automatisch/automatisch
+type: application
+version: 1.3.10
+
+...
+files:
+  automatisch-1.3.10.tgz: sha256:38fdf8a6046571dbf6ea7aa2293b30b93357178db69165169c5f73253be6ae10
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L4sCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JngvjDbV0919JQlvStxw/oPU4YkNeregmMBp59T/FaQwkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAbfQQAJkK3w8d/hVvWumkGLxoxNlEcXy+
+jfPqC5Q1WKbIvfsAyCrZepL4FAawICouZ/oFfDLtdtzS5jLI2GMMWOeJucjRI9it
+9mUlN0iWDafgu6wEUA1ENmc6JoKnCaufRY+SFMcf8kts9/36/1qPicqJ/u2WM37n
+kkpgaAkMVjt6WEdpGmnPMXU2To6rAtqHd20rD+JpTDAsFBHXqCqH4jgcPl7cZirl
+OeC91wGxLOYcXbYIFXCcMLOWUH0XSuT4tl4AJcx3bTyGqXNvGPoRxBg3VEDiPHH4
+EP3kqz1t4oC3DWJKrC2C2/HqWOJ3NtE6t2qlpD70YSgafY3BCDP8QwUuOBmNbw92
+QJSMDy4DGcf8njQu7VnP1BStLglv4LB5FwGT6JLITuyAG2DpxYl/7OOUt6/2pcyk
+HgH1FlE7ywBRUEgoLwN4JXhdFDKll9lIm/DlIGX3VMEveFJtRACwTssu6xjD9TkD
+7SakeWSYCpK9yFQsdICLwPB0YG89pI7isnZaYiybVclH8IhdXjbnSlDN+dtWucA1
+BOKtQfnfwDpNcN2aEaou0C1hyP1tym1t/n6FUDdeEMnuisOhsNtr7N7MN3bMxzWm
+qGn18dON3itTvD6BV3yf85ZtOHdACWkw/R+a2vF4E9UYJ6SkZ7ref3lbnH4F2ksl
+dxecwyQKCQ0F11e6
+-----END PGP SIGNATURE-----

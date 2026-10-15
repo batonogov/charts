@@ -1,0 +1,84 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.middlewarehq.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/middleware
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/middleware
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.3.1
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Middleware open-source DORA metrics platform with PostgreSQL and Redis
+  for engineering team performance
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/middleware.png
+keywords:
+- - middleware
+- - dora
+- - metrics
+- - devops
+- - engineering
+- - performance
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: middleware
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/middlewarehq/middleware
+type: application
+version: 1.2.9
+
+...
+files:
+  middleware-1.2.9.tgz: sha256:989cbfeca7b6a63d8d88afe67d8969949955e626a5bc7a439c672ae1291ac47c
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L9BCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnMcM7u+R+ApL4I9aay6KmcnfgL18ynropviQGJT13J84W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAG+oP/3AKseVGb2iG+w1XcEcOxPSz7Vhm
+B8YWSKWrGf3uDKM2nSuLi7u9dsEVG3EruIDqXDBJkXSoHRTJeaAiXmbI4kWf8+eh
+uBxA+KOilnFHwBtohK7NGNp58pyBO3LmUeMsBuHc8s85JRh86ykhiPoQ3+VjEc53
+dAB66GASUGirAR/ZJxL6TZOAkgtMaZq7IwunLU4PngkXQ1Jxf0peYnGbLZUipddi
+eLlOqi4gP2y7uMK0AtP/RcRNXGFQF6Cm9F8R6c2c/4LfHKTrHf4ny3lfGz66aqgM
+QQfrTltoxulmnDJLgwd9+mUlI5KPa7LNHY8r1Riufcam53qVpnEgZKRcBR2IqB93
+uGpxLDDG+cYbW2ONuIO4fI+xmeA5o3v7pa2lSVubmoRe86T+6gy7WntZfYxIPGBn
+bCN0kqMsooovxb5QshilUOKHoQfy3sv/mxqcb+UCUkEbvRkWIJQwxBCwKudlu2Fr
+7eG8oq+Yi+Iaa5xPiGvj71z2vfhnJ8/lNfHY2zYWncbbtqHeIZtrhabaaEdQK1Rb
+vWA69FuwipWoqv0kMsAGZT6C0riSoCVgmBlgiUO7FnB+/qfRXfXAzhB0J8BYavTh
+znNEUME9kvCMY0t6Pde0f+DX43fauIRAHacPEaB9abz+SsU2ItOf+dHtAnXXHH6R
+/q4mgRqDJOYfwutr
+-----END PGP SIGNATURE-----

@@ -1,0 +1,77 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://dawarich.app
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/dawarich
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.15.2
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: https://repo.helmforge.dev
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: https://repo.helmforge.dev
+  version: 3.0.2
+description: Private location history with native administrator provisioning, PostGIS,
+  queued GPX imports and retained encryption keys.
+home: https://helmforge.dev/docs/charts/dawarich
+icon: https://helmforge.dev/icons/charts/dawarich.png
+keywords:
+- - dawarich
+- - location
+- - gps
+- - postgis
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: dawarich
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/dawarich
+- - https://github.com/Freika/dawarich
+type: application
+version: 1.0.4
+
+...
+files:
+  dawarich-1.0.4.tgz: sha256:c6593b08f02acc264b2823db4bd32af04e05286adc952987667aa2e1a5774ee8
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L6VCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnO8bGJ9D7ekkyLT5rh8qNQCcmWQYb/vNQUDh3XbGo9usW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAeh4P/0dpJmC1MmteTRU+JvmEUnn0EPyd
+PvB323Iz2bHtfIH9SrXmBl2j5d9BGlAbWu9rlZ3f0T2k/L0JN0Y1n3D4ghTS5Zgn
+ksVaUhcIbZAhqX0LIm/jBMBbVRVYseW8E3E/jKA+TGak3/pvpnQNTVJEYcOjmV2P
+HuAD0vTVyc3Yatv7N3NYcBFRFQu3EDMrGtAgTs1ZUcnIjSo7TlIkl5aHtkjfvWgU
+lEtgRdFpXQW2x8FSQLAmZwQOicOYH+ZDGv0Q7Vl/Sv59nFvzTnImbWtFHWdHO2si
+U6M9QPTcjQ9+OhIURLYHbawowqBY4MfxxCI0aMVKH2tapzNzdwmC4cXJ62tkIdG0
+YhDexpFd8AzdLlZ+7cDFylje/9kNNKYaBZJxrn7ny5uoLE7FwlDlMloW/vjqIv/+
+DqZBE3+As78R+pKkWoVVPvhRzkMpY/JL+2QFN9hGsbbHu2BmY/t+YN2ez8v5+hcI
+v/todxOCG9AblWLKvEBoblkZ3vUyhGGj8YBMfWmmuPCqbiSNwR1eJAat2l/dNjB9
+Qbr5jOq5HVLEAC1Ku7iPnVnQ1N1n6lD50+2DJFd+p6e2l68ttGu5pC/y98IAxkJr
+62/K2fQs7uu3ereTnZc0yI4VWCb0UYqbcA0brOCJBEk4BjkCs2gFHTAyi2O35Eqk
+IcO0CBKNLZ/HAeXa
+-----END PGP SIGNATURE-----

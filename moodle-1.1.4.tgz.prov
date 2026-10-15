@@ -1,0 +1,90 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://moodle.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/moodle
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/moodle
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 5.2.2
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.4
+- - condition: mariadb.enabled
+  name: mariadb
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.2
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Moodle LMS with immutable code, PostgreSQL/MySQL/MariaDB selection and
+  managed cron
+home: https://helmforge.dev/docs/charts/moodle
+icon: https://helmforge.dev/icons/charts/moodle.png
+keywords:
+- - moodle
+- - lms
+- - education
+- - php
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: moodle
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/moodle
+- - https://github.com/moodle/moodle
+- - https://github.com/moodlehq/moodle-php-apache
+type: application
+version: 1.1.4
+
+...
+files:
+  moodle-1.1.4.tgz: sha256:1b3bc574b9990fe9e2d47725d2895b164eabeabfa52938850978e50bcc0de80a
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L9qCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jnnm6KRa4bA1oJcLspzKeITOR74QPF8IZuPOybqct1XGgW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAVkQP/iLJBIr6E3dL75kBYJA5kW/Bo30R
+t0vl1xOHShAWL6oLxgZw5R/nt5KqF7C8nRku3BCwz3dwSwuJV5rW+EhIqSpBAjim
+lKhR+oJIyQoi7ZDgABmQOKokp5/i3NWB6htMAlQ+waUeBUA2ritxAVTrZJvF79AM
+tI8gpru32r4BdBHlREeYL65uT9iWl1P6eSXHSLYye3XYNRpL3aR/PpB1FQP0g1fp
+Uh/eZTHwJCV6evFdasd7XiU9Fo8WAxvG3H5IHmS8r0eOa57qZNgTc39tyMr/VnHd
+jqCAEJ88tcQ7jK1i8KNxf1lJz8CJ4h3ezEImIQHXT/NZLn2pDv8kFvRk+7WK4uVD
+3rzLJdl2/2xHYYzd0OH4FYFPBW7yW5Ku7XGcAzqtA6tIXFCfvPmfhZ0HCTmgwxI8
+HDfK5fxcYnucTB/qLU3IaWFkCz7OY+NeAIGfhE7ttBAoSQ+5A7GtAFd2hhJLOxrm
+vsMM/CYKxtIBIYB8wmiNSWZ2/U56J7ryD/762etdQ0/0l7e3u/IYDs/RxH5PQ/Xi
+FSLBqVKCTncKYH21vur5CA22Whd+iAniJ7ILTV4UlaoTrcgvU0qatBN5nqljJqo8
+/VVLaqt9LNMNaJCyXs382oozj6si6uD94IT3tPi8X9JPX5VFMnFQq+VB1ITmBqL6
+5bT2YqgdUOExGB6s
+-----END PGP SIGNATURE-----

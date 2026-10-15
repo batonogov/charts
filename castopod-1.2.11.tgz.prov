@@ -1,0 +1,82 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://castopod.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/castopod
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/castopod
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.15.5
+dependencies:
+- - condition: mariadb.enabled
+  name: mariadb
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.2
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Castopod open-source podcast hosting platform with MariaDB and optional
+  Redis
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/castopod.png
+keywords:
+- - podcast
+- - hosting
+- - castopod
+- - fediverse
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: castopod
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://code.castopod.org/adaures/castopod
+type: application
+version: 1.2.11
+
+...
+files:
+  castopod-1.2.11.tgz: sha256:7872c0d40a06dad198b74505e069175b9a39a98780461234ca1b7446cca7ac98
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L5QCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn/mSDCFgPcniD29qA1o1DvzDLnncMIiZX2PtWawROhFwW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAaL4QAMmNtugkKznudVvv7yCNf2L4b5MW
+dPQ6u4zZwkGUfeqzI5K3M6xAKmvTKqKQQiFcaph4wUe6uiF3UQhkzqjopzfKEkNT
+LWjR4jYKdpkn5BYnDoWILrGoIXpCIQ6M5tkyFNJkfBn8Aro3n3fLzMMBbu2/ZZmu
+ZIrVaksF/N/RarZfqlO0HPlnHb4dAVm8wiHdXls3XDDvUZJkU6FIrbznZ2JUit2F
+q0jEPr89Xc5av1GdpUcK7Y7mahB+Tmo4mBW4llK0/QHq2vxGCPNkSMjxS22388fG
+4HRK0+gaJe1JPBo8IQU3vJm+1doDZXYnRhQvoUzmNwpgb5wWfGBF/Mzgu+pT5aWJ
+C0ZxuGVi7wW0L4xby6C2JQN7gIk1TGeypAXdFYizTlxDV2VU8q4JSsKBWrgTIfiC
+1xOLcZz+wGKBaLaaT4waQQpLKQAFM8ZmX8cgMxY9OAweGW/DoelwrHDicxMxci2y
+TfNNKARigzzXy2g2JJN/CXTta2DWQc9xt2281XDXsZxv9JecXDhkwXr/30sFbngZ
+YotEyeL4gCVY1TtpWf09qqJRJx1N4BsJrSO9REB9aRyk0IwDz2oy6+3ktSLYfcxE
+MXRNmKt9qwUwCU9cE4pPCf3PxPHPSz3601y7+BWUmi6tKvcJOlspJoyeuaXBFVyd
+v4EdOMULcuJQp+vM
+-----END PGP SIGNATURE-----

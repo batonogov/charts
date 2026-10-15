@@ -1,0 +1,87 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://superset.apache.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/superset
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/superset
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 6.1.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Apache Superset BI platform with web, worker, and beat deployments backed
+  by PostgreSQL and Redis
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/superset.png
+keywords:
+- - superset
+- - bi
+- - analytics
+- - visualization
+- - dashboard
+- - sql
+- - celery
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: superset
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/superset
+- - https://github.com/apache/superset
+type: application
+version: 1.3.9
+
+...
+files:
+  superset-1.3.9.tgz: sha256:906a89c013f170ec1d079ebdb9bc3abff52813a4e32368d6c08140a4ec2251a3
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0MBaCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnT7vNICy/pJ8kYLaGa1KU0ZRivVFs9Q/cd84TQcV3lCIW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAUvkQAJqD9IMF9kmUObR+4QKhT/CCCVaF
+NY3j1bLtLvyOUetsOdXK3iThRBrQIBWq8NsDOtW/KykyEp2gMbQi6Y4zpcOdm8uL
+7Q+DED+cPoU+VB2xiW1HhlHnK+GO+OXvEyN5z8bP2UL4TELNiP6Rq0+wBYoPoHqS
+aNs3dxzgT9JYXCu3sziFHcKd7vlZmq9rMIb6eZG1tQPJ2TsA3hOtdpGs8s/mqM9J
+t9W6sxq45Yu+staqFTIILkZDR1Bsnekl2htKu9T1cp7dMfxWnFGKO/5rwpFD68X7
+kaffhIYliXKhtYuT79DPqnSPuxeKf4V9slLrHfWlChKuMRNK0U9fP1LyQJrvQfxe
+ohz5OWVe7e2/YejnAeEWNEiXN/FOv/hgZNd14Gq1rMdM22sI9sjZoVzSHLWCId8r
+SE54LCvNHWYBFsAvxNGfNvvJnAEjaURRqJtmOmFd5cr/Wa4Vs9+DvNN5m/lREUVN
+PDQB5yqAXccox43Z8JfVo3sBxG2hM+5PhMPH8NFpPyI2Ukjlt7EhnussN49BUYs0
+0kIMw+3S0VSa/ZRerMoP/tqt7v6ss4JhCSvOGQ6Z9/8IXZxNaRRk2fiqFBcSqVWs
+i+tme0k3hXysaU+J1G7B1Z7vvFq3U6i3PPzQH+4pcsLFrlOtakOrOXK2wSU6EBkH
+6Z7kFq7M18qPKc/h
+-----END PGP SIGNATURE-----

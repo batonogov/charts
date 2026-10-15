@@ -1,0 +1,88 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: ai-machine-learning
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://openwebui.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/open-webui
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/open-webui
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+    - url: https://artifacthub.io/packages/helm/helmforge/redis
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 0.11.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Open WebUI â€” self-hosted AI chat platform with Ollama and OpenAI support,
+  RAG, multi-model conversations, and extensible plugin system
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/open-webui.png
+keywords:
+- - open-webui
+- - ai
+- - llm
+- - chat
+- - ollama
+- - openai
+- - rag
+- - postgresql
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: open-webui
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/open-webui/open-webui
+- - https://docs.openwebui.com/
+type: application
+version: 1.4.9
+
+...
+files:
+  open-webui-1.4.9.tgz: sha256:1be4fed0067d58f4b519d2b4ec74eea68a3d385623f9ecf33df67c003fa04429
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L/2CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jno/nycvjjxGiDtSY2N9oDA6/UUM+L4uDuHq8qUJLfZC0W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAAngQAKbA1DldnqYjqnvpK0KMXBNTU5TV
+N8CwXbSuYiEG41orT8u2BSVqG6Dz+oyHb+sacaTcKRsjA0peAFuMJ9gXkfhz6GaQ
+qCbYfubzN5TOS0VknTFiF8lFlutrz9yETHcok7yps2F2Pc6rMMzjgNjhMjYeZwHp
+GPk92X0rZmusVR5Wmd++01/V8IqHd2DMRCjO1zyvz/peBv/6HreT0wc/l4DURHBe
+09I2oCOhtD5oICd8cHV6eFqn/ckuJRzHPaS/UHmj1fmfv30tCTXgaX7bUEdzocW2
+Z2v72eV6J02qUF7zCS7m+ro7YcD6OUWjVqP2Mm8G0XSTWMvMvuKvth1plV8xic/f
+Lf0FiqM+SJJSSXvTDaSQceRHfMjdPZzMhqzfrhpe0qfx7ACnEPPDDSYNajpQQBH4
+NybN7ozFZW/aG7L2qQdUTbo0FLAlp7Ov5rQAKnyZslyP4ka+Z5clAdqrDa/Rmaw7
+opXU/WZwXqApo3h0ILfD8M4/abW36MNMTzMepehbYxzdfnxiXL95H6C9kaYsZg/z
+wEwuCPRkAXcFCetKR6jDQQscDKfZYHIq2XCAZozxTcs0Q9tv3i53CCgwrLcPCK+s
+CT4wLLmKsxHTTJCCxkyD+1qgZfxo7Xuk6wB0qfVQ1dSgqT1byDbJK01WG8UdIVXh
+o4rGPQ/q1it5Sraa
+-----END PGP SIGNATURE-----

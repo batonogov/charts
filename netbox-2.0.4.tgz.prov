@@ -1,0 +1,84 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1428)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://netboxlabs.com/oss/netbox/
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/netbox
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/netbox
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 4.6.10
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: NetBox infrastructure resource modeling with web, worker, and housekeeping
+  workloads
+home: https://helmforge.dev/docs/charts/netbox
+icon: https://helmforge.dev/icons/charts/netbox.png
+keywords:
+- - netbox
+- - dcim
+- - ipam
+- - source-of-truth
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: netbox
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/netbox-community/netbox
+- - https://github.com/netbox-community/netbox-docker
+type: application
+version: 2.0.4
+
+...
+files:
+  netbox-2.0.4.tgz: sha256:86ff94852cfb01ba993f0539fa482145d8fbf78cb21d390d518adf9e95550e6f
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0L+yCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn1f4ngsFPcMswk2QG4kJbzMYIYig0GNRqHlx+0yA74S4W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAEj0P/1yK9vQ/a70GA5cLoNyNQJZutqLk
+IQ/5nywku4/qmbc/M8AXHqxWyLGji3yjf3fFXetB+EjDq/q5GQAS62wGfpNTVblP
+PEvWUroCa18fJarNH11KE9ttD+BTXVPCOgtD9lqhoeqyczWl4iEgoWPQGJnL9ERG
+2w2JBus6BgkgM8KaH9zZoMfJtstnCczDlLu2e5jLs3+YFYcgwBc6NZxCNPzPv+cg
+kOoWXUrEh4ttt/rBClB8Rof1aHwYVzarxOX3O1TQOTJ6KLEX2JbNLVJjvup/a7jM
+yLEcO5XglP5Fdhaj1FrgathoDrO1UOCW8CsX3UpQBZwR3gJjt6XaTg0xJ1Qn7NdQ
+iwk+6VBCJe9r1wD/Um1Yn9DWY/B3WLr11qEdOuFNwpf/jSvLFuJ/UdmT9hzOwCHW
+glMTuQoT2rodduzEaKl5iuC8mlHZ4CNI8REh841ZlrqNMkeNfc/X39w3z6AupItA
+gc7DTllzriGWjnSKYOjxgPmyetxwSAN6cyi0/8dmNCxgJtnMs2P+swUXHPVOv6/0
+zqtqslN4FcEgvhyts9IPkA2Z4QVjhwRrxXngK7OQXYW94Kwc30fEJc0huQSRdmVU
+SElnrIqb8cjqZNqkH0rp2EQYcmkuWJ01hcy/u1JnDLIlyILxMyxcIxfHg05mv/IT
+TzSh8YZlrXB1nCF2
+-----END PGP SIGNATURE-----
