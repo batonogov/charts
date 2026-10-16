@@ -1,0 +1,76 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "update image to 3.9.6 (#1532)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://zookeeper.apache.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/zookeeper
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/zookeeper
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/kafka
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 3.9.6
+description: Apache ZooKeeper Helm chart for production-ready replicated coordination
+  ensembles
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/zookeeper.png
+keywords:
+- - zookeeper
+- - coordination
+- - distributed-systems
+- - quorum
+- - apache
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: zookeeper
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://zookeeper.apache.org
+- - https://hub.docker.com/_/zookeeper
+type: application
+version: 1.0.3
+
+...
+files:
+  zookeeper-1.0.3.tgz: sha256:d2eafffd4a981d00363164bc3ca1e42112515cbeff847ca91fbd349cfc3976a3
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0eNMCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jng1DBjhAZZsXg9+vLGrJGs8iZdFBSBl9/FRm7TeGge6sW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAACIQP/0m67jwH41rKwc2LP1Z1lNyubuhW
+JZKfnnW4HTHAMJEkTvGjP9gCvmmqaRsCdOKsP+E2772lagOtvOeTFxBPpWiFlkzN
+q6RXcy7dldGXbJrsQAiIFYn1+s4olpXnJo+TySZaF4YXsqvwIQMuSPLEA22rtkRQ
+3mGADrHso7XYEytlQDK8pF+sTTQTsyAEMrsCCK5T5WeOyJ1mAdR0jrEbVfPexhJK
+hunhzXSbLmNpHJBoVu2hY8d7ZYDFVmgKHPRxMwsF04Od8lWVayTOmss29o2JlJn/
+kWhMm3b74btuB3Vn557J/tx66msZo0RJ5fdkOaXk9IndnyYftqFDrbk3HwVsQzO1
+HsRCVFwI9MooUnwp7pg2+ZXtwNqh8lFxJCNAdyA1WAn8W/p1Wgo+BWz976Xwgo+e
+U9eZhZBtonPvDpyiIGDtJQI+R8gb0Gd3peo1GBlnb09/0sohI3Nnjcmtuf7EueZH
+Ak48lKFxZroCiG1gdN81MzStj7CLOW755NcoJk5WxRedtDjWYGRwb9yL7WpLo1xV
+q4fAuVq734gSlXyWazevvzc4UadwP9DB6skjyrILcTnGGltfyry048MUxKq+UIjK
+VX680u8P/6a0y9ee4gmNFCiqDBk6h7Kbitign7QCrGneLiUYYISIrTGzsidoSfA3
+IFUKI/joNjM2i3lz
+-----END PGP SIGNATURE-----
