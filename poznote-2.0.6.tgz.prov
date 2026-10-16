@@ -1,0 +1,63 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 6.115.0 (#1524)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Source
+      url: https://github.com/timothepoznanski/poznote
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/poznote
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 6.115.0
+description: Self-hosted note-taking and documentation platform with SQLite persistence
+home: https://helmforge.dev/docs/charts/poznote
+icon: https://helmforge.dev/icons/charts/poznote.png
+keywords:
+- - notes
+- - documentation
+- - note-taking
+- - markdown
+- - self-hosted
+- - sqlite
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: poznote
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/poznote
+- - https://github.com/timothepoznanski/poznote
+type: application
+version: 2.0.6
+
+...
+files:
+  poznote-2.0.6.tgz: sha256:adebd14c50cd036e7fcf1ee34c1abbf2f5846f559cda8c101566f0e04b66ebc9
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0cfcCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnuQ1tsJ58DIhtWAQoksJei17DPMMMo7hCSazrA0r7994W
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAACqgP/ixmhfBzztJ7iuZXfbEVYWCVPTY4
+VXfg1mTqzzjdlpRNGZ3/udiIGLjcyGW9uYvNWeITXgmLLFiTmuFN4xmMrZaT6IOH
+ch1maXB95RSG2AU7sQOZ+rRXSaSxt5g0AEy3HMzKhzo97Ak0cRekX9aRGE2122+I
+dfWrfcqeIm6GF0kLO1vbBdCZupQ6XzuqNk1YGrhsQPgeioWfJr9Uk1JwVu7Q6UgM
+fuCDqZG/PjPt9TaUI22c5uF/RClzGs/Dc9qeNXZNTZ4co0Ltqj11ASbpGDOf0tJh
+knaksiarXKqKD7fyPcHcYrKu5AqQMp3FILfqH3vkdBkymDGIhTStV4O+oMm9HFHP
+pI9pcyrtqNlUJAD7DrVkWu4AudF8tsGYDEJIhJF63GGjdwwfvlGadt4fB601If2P
+X2RSBxGOw+ezsl42XmQj14nQduN1NvX8ZXS2mWLJ4EBe9py/VHkKxx/BAW8QA9WK
+0XLd5GsIiPXaC08D7Qq2G8RA1zio0SsYLuR7VsML92wkA43EzAIV+6hAQ3hqUueL
+IE7XbpWS0vXa2CQYgRChsXv1ecFMgf4P0HqpyoB21WxscmyNUeZPZJZzWkfyIIRr
+5GeW3wOmvF0oGROgnYo5OFquEBKg7DW6mxbrohr2c2+xKIQlBskBgfyn8PhMtOCg
+mroHBAqE13BKooG+
+-----END PGP SIGNATURE-----
