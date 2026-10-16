@@ -1,0 +1,79 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 9.5.5 (#1503)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.elastic.co/elasticsearch
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/elasticsearch
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/elasticsearch
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/kafka
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 9.5.5
+description: Production-ready Elasticsearch cluster with intelligent presets, automated
+  backups, ILM policies, and multi-role architecture
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/elasticsearch.png
+keywords:
+- - elasticsearch
+- - search
+- - logging
+- - observability
+- - elk
+- - opensearch
+- - analytics
+- - full-text-search
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: elasticsearch
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/elastic/elasticsearch
+- - https://hub.docker.com/_/elasticsearch
+type: application
+version: 1.1.9
+
+...
+files:
+  elasticsearch-1.1.9.tgz: sha256:0cc19af3929c95cf184baef9cede856c251002dcfd2a6a764d54baa62258a0a6
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0WlXCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnimMmb+RxkTxCzUG+RYEYogZwycfmuFnApDAtJ582EJUW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA2jsQAL4XhwoHEoNRM7KG7jjvAWrFTl3k
+ZBLJHZ0evwKRocZSxav/mDuMf4yTZGESzlxSN9qcbqGGDqh4LwEX0EZvdQGKrdXk
+VXwxGIJKZ4YjaKi+s8Wd+EsYnB+xX78+9NhWv2mdGDLEPdwWrti0Uq5ag6bh7iOH
+J+4jkERU/ZMFGGe/Qoqjl8vePoiqci559406FaRala4TRJpcQEO5LVQePJW7F2ob
+fJZ6DLqM0TDVnwg+mFhT72tx+mIym6I9hvg1As9dxKIAy5+bVZMYi2bgGRAv+K0n
+g6FUnaG634tSNn6emZemgcZLMXBlN7pZWtY1lqzlnBvJErH1x2buB0AUDZaCnctN
+eHc8qE/9sAEiKXNPy0aNRmVFFpXJ2G0W+YRshVsZJpr7rjwGnlnl6sTFK2O+CXqX
+Lm47m6Ck8U5uOrRhPBb8q4INhOBcdXb6DUETk6DSMu7pH6duWWT7n5EqP2TCrdDY
+7A5kWar0g2zQpcTjUJWdLDXjTXl03MsZyV3kyDLxW4IbW8+WdBAkk0C7cCamE/O7
+eYv5SZcRoah/UCYCtFuaGPzt5YPPdb4zF7SOGkYpgVa37V8mZcd9bcT8AZMWNee2
+0X3o/oZS+2BhBcavR0jPwmDWCndC4/2b25tS7IcXQYBOOrOwqCNJof2JBKcy8Pbu
+SuNn2GY1wtcE/B7j
+-----END PGP SIGNATURE-----
