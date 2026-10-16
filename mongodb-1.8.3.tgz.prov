@@ -1,0 +1,76 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/alternativeName: mongo
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 9.0.2"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.mongodb.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/mongodb
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/mongodb
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/countly
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 9.0.2
+description: MongoDB Helm Chart - standalone, replica set, or sharded cluster using
+  the official MongoDB image
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/mongodb.png
+keywords:
+- - mongodb
+- - database
+- - nosql
+- - replicaset
+- - sharded
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: mongodb
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://hub.docker.com/_/mongo
+type: application
+version: 1.8.3
+
+...
+files:
+  mongodb-1.8.3.tgz: sha256:02dae78037753e4b77335d0037235c2a86f6ce25ffa9c20e3508f0a0139a48ea
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0akQCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JntDUWRMG91zZCjoD5zgbIxrVIVJEpbT37lo+K2MDQgwkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAhSIP/jwN3Qtp4pxVJhzYzjQWUkhDwzXs
+1bmP8ql8y6KtC5rMbIAdQBjPS5jRYz/fOX2Jg0MtwFNK/eQ7w4whzaGfW0NmMbrV
+e1OIGQxKgxCrFft7qiUQFFULjyL2hsYH4PEneCT520euwKo61EuJGXVGCVVMhNMa
+m4uyzgT40wLcwmjMarVV0spcT8C9Cz/KStUEe5MjYcpH8Zdqu6rPONaL35atxLjM
++rAHfZcLhviVR6wHirPEc5FlYSFc4AcfRoxdywnJsRVyKIAVHYbmv4ALz+oXzZVH
+hygrbOQXQuad+u6dx2ZCshkrB+Pe0dGYtHU2zCGpLOlSFThBAPtr5nZo1Dwjg/DR
+aEYyoPM6TsPoKRAQcaJ3c9fHw2lvXo6KIfKYqu20iA3mXDEegTY1R5xK+4ZCuyuE
+3GavyL90tzwNXuQmLV73jGsacayFxw1qMKmRTlZFCL8bh/fXJRsbJSk9ssBva5pM
+nr3drZjfbpych8Xtu85/SO8gqP+9JgkdNRuB00rAH7UFZ+RPrlbJgPWPUEVALWMr
+SuOaC6w08YwOUXHBurdE8TxZi6S99tB9MTPR1l00Ws+k5OY3sqYH1DgTXZftHYZt
+Qjp2mO6jPtVAzQdire21teP11aa3vJpyXSpJKbYvd3WiwRCyBAOmiURJWIviwuL1
+QgjpSin7V/lR0SG1
+-----END PGP SIGNATURE-----
