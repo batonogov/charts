@@ -1,0 +1,80 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 2.580.1 (#1509)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.jenkins.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/jenkins
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/jenkins
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/gitea
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2.580.1
+description: Jenkins Helm Chart with secure controller defaults, JCasC, plugin bootstrap,
+  Gateway API, and Kubernetes agent RBAC
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/jenkins.png
+keywords:
+- - jenkins
+- - ci
+- - cd
+- - automation
+- - devops
+- - pipeline
+- - jcasc
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: jenkins
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/jenkinsci/jenkins
+- - https://github.com/jenkinsci/docker
+- - https://github.com/jenkinsci/helm-charts
+type: application
+version: 1.0.10
+
+...
+files:
+  jenkins-1.0.10.tgz: sha256:fa5693cede625cb969da64993456c3780c6cacc07383f28b9c9d5ec6d0e59edc
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0XfgCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnxczCNfa0jlSXcuP8wyCATrSdAV7+Y/RUg5vp93ShcZAW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAe1sP/37BLjj7Geku8Z0xVu2tiR8VIj6B
+rqm3xX8Zvh1xJir92zagvjzZ9FR5vAoL7pJS+qh9cXTiNny0VjE5WsN0XMJ0ZJad
+2rHu5zA75qax8JUeJiBemrh4+1wAHhRjg5FujL/RP9QJQBtDFDx3ihtJuSFssYVu
+DUZeZxKtSNv1/T8f2RsmvKhS1gBmrTOn9nv37MMrUubpYzXMHVYiG0pv98sOxM7z
+VNzzlwS1EixFP+KfmsmicH1upY0Nn9Tehffv5NbUJwE4u3zXnuzgqMP9GjDEl70F
+5fbIppF5ruDcDm7h/QTaA2FJ+4J6d7GJPpC6ipzLn71Ptp39u7lRnoPmcIYh3sZj
+nX+9cxSyJcHdPQs8CTb5Tx7LsSyoIKCY46A2C3iYG2N66HbH7z0HweGwB13qYx1a
+oAItIrGuyCLaA61vUeeMA5rjNBIEkbjIl/izYaLN81LSbpWI+Yo+uiTIzn2oDxF7
+cfhWOC4nniRmLxJMdmcsHLDIa/xOcVM5fmqJ3M53kjmRQedUYI8cHSp0B3ILERgZ
+8RQqRytGbt2gFkut+wYYOI/qYZHNhtn1vWqGS924AXHUEL4xQzwt6OgECJ/a5Po2
+MIsH87nETppXpicl9k5X1+zkRMnLPD45210cJAhYoDWfQUMQzVKnidy3yY1dhgyK
+cN/cZlMAQfpU8ys1
+-----END PGP SIGNATURE-----
