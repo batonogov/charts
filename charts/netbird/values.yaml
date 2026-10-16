@@ -20,6 +20,7 @@ server:
   # -- Number of NetBird server pods. Keep 1 with the default sqlite store.
   replicaCount: 1
   # -- Public URL used by NetBird peers, dashboard, APIs, gRPC, signal, and relay.
+  # An explicit default port (:443 for https, :80 for http) is allowed and is stripped from dashboard redirect URIs.
   publicUrl: https://netbird.example.com
   # -- Shared authentication secret used by the NetBird server. Override for production.
   authSecret: change-me-in-production
