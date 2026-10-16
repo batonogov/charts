@@ -1,0 +1,88 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: fixed
+      description: "update core to 7.1.3 (#1530)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://wordpress.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/wordpress
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/wordpress
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/mysql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 7.1.3
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+- - condition: objectCache.redis.subchart.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+- - condition: objectCache.memcached.subchart.enabled
+  name: memcached
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 1.0.8
+description: A Helm chart for deploying WordPress on Kubernetes with MySQL support
+  and S3 backup
+home: https://helmforge.dev/docs/charts/wordpress
+icon: https://helmforge.dev/icons/charts/wordpress.png
+keywords:
+- - wordpress
+- - cms
+- - blog
+- - php
+- - mysql
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: wordpress
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://hub.docker.com/_/wordpress
+type: application
+version: 3.0.11
+
+...
+files:
+  wordpress-3.0.11.tgz: sha256:d3913a9277d857b35e9b4aac678713c1d995024bc5cadbe4d6c42b01926af785
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0eDuCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jnaa+a8AEF6I1N/HZfe3FMh8J3P/xlzGAuGNyxxcOx04cW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA0f0QAMLjuSOclasQxRf+ZlRp9N9K8K7F
+kGjon4MKnKdalTr1tqixWR3PX7LYMGYOma+R6XEkHeLSqyh4c9e0WRVmyZzzHQBj
+oXNV8pdeGH5Y7HTWPH/gOnXgi9xASKHrq27PlGSszOl3EWkGhKAFaoWfI2W0n/2q
+VforYNuXXCXyOUkAowObQ280Hz0OB0fhQbp5Ib4RLfZ3eke7Fz9MriPJpoRuNu6h
+xzZh5sprQRyn/irOiGCTJQLm9Z+HZya+prZg9bvoEY9hLbnabdUlA15cxD3ERyKh
+ub9u+Rg+spxt+LNx3O27TG1xTE13tTadW63XlwCPSDVrLcRfBKih4d/pBoXjizYV
+8rVtsRMILXmWC5m8udxgisesqOU5ttHvbjQeoR6uvKsR0YiOLvwgv4joh51uADsq
+hRcZSpG/qZIYMkzuIKOoOzDzhABFxaAAhlxmWk0P9qqcRMyl0aw6QH6vNB2b6nrJ
+hp1gZEO/vuHKcL+6FhyITColgKNM7AkFuMAPOPp5XZ5f1e2fu54V78IbNcWpHDUn
+wDsj/BGsU94duEeQOXMHZTiAHJ3//HoHutMlOA5C2ylzxIwrVT0IOA15HvcTPLAq
+9D9QRoj7WUmRS99mDPRL1fRWxU0J+N/9KnO7d11MfCQbk8di9U8mJiZx+tlK74z6
+xHYfXy4yOoAdbjMg
+-----END PGP SIGNATURE-----
