@@ -1,0 +1,70 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 3.8.6 (#1526)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/siyuan-note/siyuan
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/siyuan
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 3.8.6
+description: Private SiYuan knowledge workspace with retained authentication, restricted
+  runtime and persistent recovery.
+home: https://helmforge.dev/docs/charts/siyuan
+icon: https://helmforge.dev/icons/charts/siyuan.png
+keywords:
+- - siyuan
+- - notes
+- - knowledge
+- - workspace
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: siyuan
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/siyuan
+- - https://github.com/siyuan-note/siyuan
+type: application
+version: 1.0.2
+
+...
+files:
+  siyuan-1.0.2.tgz: sha256:14a7c9e519b14b2f332478358e0ef44e37ff48b002a58ec63b18bb75f7124eca
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0czrCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnThvf7qj3/iZ73lPafjpAGhKCUsxUQAiF1yAVmy3XEoYW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAABdsP/R7Aul7a+gTJtrMZg/B0F/FoP2ir
+jVZ3+wx/D2VR4As12Qq8mJoQel53XX6k7iSSifhDNvT8uI5Vxn4XJ0B9/z6P7ipF
+meqbhVsd8zRaughL79CWnZhdAsx6AQxYWZ1kjTgTAXZAuIUrTIVZefnbk8Ft59aj
+5zuXIrJnlAjLJ6/yLtsU5jenMeQSL1KK8U2W53QGB1onaWIWKpqvt+PnouJ4xphu
+U79Fu/5/9BSOrlu9RM23/nMadfosA+HQu8kpLr6lzJbQ3GTP+LUsvkzIDmLHARkF
+tCRl+iWIeKWVYAQ6d9VnFuNyp1GCBmI4ybpRswQcT0psK1IRxh2LOlWK2br7BGgL
+o/NMhxfqvKuIAQMKW4IC7IRobMQm9S+36xC4cb734hhR8blE/kwJjom2zrHaTR0a
+PmjL193rbibf+lk6pBZvO8ApRYUXSIvY95NVkB2UemA5QI6z7KlT7M7l23iYfuxa
+m3Zu3V5TF8dT02bFmJfOimC+BdT1IETAo84ci+cdaVhFt67KnORkep0/yUCmACEZ
+7iWE/qOLG2dsdB0rpLISK2NiMJYhJXO7BkZ/yvFribJamJ4ozPjiGDtVlIKiEw5k
+BooCknKw7sPZQymUZdIPdNIacJtImWOdoZW4encDMqva0M7NlNwka04l/Nw374rI
+r3sivLxKAKEJc9oO
+-----END PGP SIGNATURE-----
