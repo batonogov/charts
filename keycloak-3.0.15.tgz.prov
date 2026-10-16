@@ -1,0 +1,80 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: security
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 26.8.1 (#1510)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.keycloak.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/keycloak
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/keycloak
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/authelia
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 26.8.1
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+description: Keycloak for Kubernetes with explicit dev and production modes
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/keycloak.png
+keywords:
+- - keycloak
+- - identity
+- - oidc
+- - sso
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: keycloak
+type: application
+version: 3.0.15
+
+...
+files:
+  keycloak-3.0.15.tgz: sha256:b3d021caaaca23befa430aeb0224224380b03de4ea817bcb49d5d1b3914cac23
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0YC6CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnzsdpblUbt9yS/xRGdVQAsfYnAvypg7PlnhXgR21paYcW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA2J0QAKZ55z9xgaAtN4FD+H1+utVHw+a7
+03oRPAsAD8QQs7ZEaV5m522PugZe4oHCyIA80IvHB2kyBHpeB59Bk+vyO8s+VfME
+t1Dy54sbLcHqSt0QLkWu0RLCvjf+CyTEd7To9cjNCkcI9xHdIpviTOEA9++ypM48
+VvtKILxvXyAg90vjm/RjKTQqqpr/aqSKfW4t9LdTH0Q7r6s0wjJE1ScJYC7IEc5g
+rLF65Xq0stgDpOXBvBqd6XiUWV80stMNX0PC/nGgAJCP46Xt3qRsfMyqabcuMrin
+uPh+vLR1UjOoz1WFpqaKxhBOCeToKZjbStEn42dxPqgkQ0yYNo78WLz6YapzA8XB
+8OQuJho81ojp/H3nxABzChQ8MudQiXl7NnrwmVbjUvUUDlpod7OeywVWgFFlno1U
+KMmxG9H7rMtCcOwbhh0oBOIltGm1/3D0XIaxIR7889jwSsHki9JRGyxxajUwn2A0
+dbh7Comm1j24/W9X6J9NmwX4C5qb1VOdPGjGH01JNy3tF9pwMc66OZIg/vN0hrNb
+fNMebEI0QlPFhz7f4aQCg2IReXo7WqQu99Dh94LQi+9LojlzbAby17I0DQkgAhhv
+RkINUG9aEc1fN35DWoSFxUYD8UjkFi5tJF2kT8nAjCSkjP0Octf8s0CIZ/dUee4M
+NuhKAIdERQ3TTIIC
+-----END PGP SIGNATURE-----
