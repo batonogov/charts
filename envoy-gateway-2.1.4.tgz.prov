@@ -1,0 +1,87 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to v1.9.2 (#1504)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/envoy-gateway
+    - name: Gateway API Docs
+      url: https://gateway-api.sigs.k8s.io/
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/envoy-gateway
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://gateway.envoyproxy.io/
+    - url: https://artifacthub.io/packages/helm/helmforge/envoy-gateway-crds
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: v1.9.2
+dependencies:
+- - condition: crds.enabled
+  name: crds
+  repository: ""
+  version: 0.0.0
+- - alias: redis
+  condition: redis.enabled
+  name: redis
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 3.0.2
+description: Production-ready Envoy Gateway operator with Gateway API support, cert
+  generation, and advanced traffic policies
+home: https://helmforge.dev/docs/charts/envoy-gateway
+icon: https://helmforge.dev/icons/charts/envoy-gateway.png
+keywords:
+- - envoy
+- - gateway
+- - gateway-api
+- - ingress
+- - api-gateway
+- - kubernetes
+kubeVersion: '>=1.33.0-0 <1.37.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: envoy-gateway
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/envoyproxy/gateway
+type: application
+version: 2.1.4
+
+...
+files:
+  envoy-gateway-2.1.4.tgz: sha256:ef892f961cfc099ac0366ede1b863ebf2a3d079c8ffcecaeb9d663c4e852601a
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0W5dCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnHc5Obj8V0fhQmWymL5dpzeXdzHnawlK1kKyl0QkWjLkW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAArX0P/iW5uYijd/OZ4MDQkKpwLRJCyKVP
+ZGujSKoIa+XY0mjLJW25Ens3clW18Q8ywnUNkDwobtpcrKHdqEF9A+5SC3+2w0NG
+1OdXTBB7ZV8PM2bH73eZVmNIlX6n0hRLaGRDIO4yRielGt5NjC3x7sXxv1Pnm/4x
+sOMAhD3AyN6s2cq9bPWy3kNOuCjfGMCBTaLPex11XBcrQLUYcbuDR1ilTDX0EdUh
+eQySqBwV2l1uASCt9RlSWR/Looaaotof83AquN2KvKISDBA7FpEmzgv8+L4qs80p
+qE8QhwN+ot4YcyZI1MZI6lghAkMtPx3sulvHrBe8bUiERWxFv8KjXDkfwrAw5smE
+TUjrofKzb66ZsD8uP3HKZfPXzt0Esg+rDg+/t4pseD+GhP7aVAFheGKwpDSiq87X
+Lv5jxYHgr5oAIqCVGYXw4Hf7viK2JJGpxODx8nR60gTt9Syl16vShYhqTdfuHx7s
+LajeMHUS8o2GL7tkY1plN+tJh8Itk0aSmbV2m/uwW47tQZ94pfOcUNZiu0iURKCH
+5DQYs5PWwptwiTI2ITe4iIjfOpsrMTAcRQtLD0kDymsiVEOAzLAEjQ2AZEwDCkNs
+PbiZRT1LrfU2u+QhZ70L6BkcC6YT9nV91NYQQxF2EHYPiUpXXm9vtouQIhQnJ+SP
+sG/fqNVEkPxz53LT
+-----END PGP SIGNATURE-----
