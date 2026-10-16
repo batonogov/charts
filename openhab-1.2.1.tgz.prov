@@ -1,0 +1,74 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 5.2.3 (#1522)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.openhab.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/openhab
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/openhab
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berlofaa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 5.2.3
+description: Production-ready openHAB home automation platform for Kubernetes
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/openhab.png
+keywords:
+- - openhab
+- - home-automation
+- - iot
+- - smarthome
+- - automation
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: openhab
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://hub.docker.com/r/openhab/openhab
+- - https://github.com/openhab/openhab-core
+type: application
+version: 1.2.1
+
+...
+files:
+  openhab-1.2.1.tgz: sha256:8c2dc33599184a501e22103f109dd33baad1b79074069fa0bb68f2af72215577
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0cCkCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnDxY1PhIBW5bhUhn019BRyfcVmAU78rQPog0EOx7JmYoW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAIrcP/AzGN5B8LhomXDyuqkFO9DHJBCyt
+O8NfhliIHQBKESwwbdCQ+7QXr5Xh94JJzgQlwhgzOOiHaoGqLa+WglttW23odC84
+wGQO57QWb45bGfh6MW72FkCCISe5tsnMsmxTk3kEx+ZMADjWUOVEYYNdshOoSZOv
+balLS06LQv/UUFhyn9DttZWCKABVnV4yydGDLayGQ6/SdESCbAd9/WsLeOfM88to
+XJIOpRddmvPosYTeRxh71apUL/JzQkMvINJsxzZKoRQlBs6H5jYxKmwpIIQASmAu
+VOgaVJkit2tsZxFL+9X5iU4bfR8WNfogLM3xngjz9h/+dfuwWme4y6Omg89pCo2y
+Qu9pi9qBcALw5yMBdLkhosrir7/trG1s4SUp2L9ibpeiqhUgiuvfxaEz3zMHxvQW
+0QpfPTX1ICOu9OvZaPRrLefNBjuf/+1ZvT7aNLBLvJaaLeR9MnWq7a8aTq8husWZ
+ylKKZWd71FLeSCf0Lx4QfBaCPa0mA2fJV3mlToqSJ29zDYd2SMf8z1c5Ur8k2/J6
+gXxtS7z9xrrkfHI38olUpFcx2yjwDl+iTg/l/Dn33v4hmk5q8aycV/z9eFDG2Zg9
+tT0urbIAnPssdzMio1HQF3EnDxH7LYe5RbQM/jsDAjOB/Mm7s5TdXuIOdV6TzD3u
+DftRR8bi7cr+oIOB
+-----END PGP SIGNATURE-----
