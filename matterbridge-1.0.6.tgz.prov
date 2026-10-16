@@ -1,0 +1,67 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 3.10.13 (#1513)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://matterbridge.io
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/matterbridge
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/matterbridge
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/prerelease: "false"
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 3.10.13
+description: Production-ready Matter plugin manager for bridging smart-home platforms
+  to Matter ecosystems
+home: https://helmforge.dev/docs/charts/matterbridge
+icon: https://helmforge.dev/icons/charts/matterbridge.png
+keywords:
+- - matterbridge
+- - matter
+- - smart-home
+- - iot
+- - home-automation
+- - mqtt
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: matterbridge
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/matterbridge
+- - https://github.com/Luligu/matterbridge
+- - https://matterbridge.io
+type: application
+version: 1.0.6
+
+...
+files:
+  matterbridge-1.0.6.tgz: sha256:9165520d805b76dcc9a2e65ee4c7ee924b25efabb544d4742a19c8c43cf1fe44
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0ZduCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnfQq58dD4p0ESQpCxXafes/YH5GokUtUGMsZ+GcME6rYW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAiEAQAM6slVlqyP5O5nGWXCswW6+/3Fvz
+6LXDbVkDPgHcNsPNwj4Im0HerXMJ2abQGYuEiUCh0IeLjfB7ooZQtohCJ6vfo6hX
++K9d+YqGnivDtwnk+nlNUvI6A4a9RnDZTwG1ZFBSPafmtwg7Jt7cAc/tywXvnQUX
+KiMsmNN/vQyRhWTiKH0WO6ihEkuI0ZqR7eN8D7p8GZoqhotyobe/r8b1ZsX530kp
+sZzgpz9bQk8GfqH2B9rcI7bXho78Vgg8nsS6x7oo/dtmkyYtg6O5tmFtE+8iRhdm
+aZwhxzHWSS4gYxM/QbbOYaUooL40fLMxQlUUNA49hb6BBOgzVRrqWU3SA2X4UvXE
+qCIkw5bIXZOegmw+tTQzV/NA1LUw+dXBIWpaVOBWVpQDHXkzr34rmugfHsfPr2WC
+GpZy23iu2Fx+M1498xLudMvKr5A2YmLfKb9bcmrAyPXOS+5clIL00rM6DYFvUMtE
+nIVlrGE8m/3NVRVE5DviMevRhi7ttIZCTBJBt0O4JI8dsYxahIEyu2CBx6nFhVzT
+v2A4reI+AdTwhDFb7Y4TExopIcfxUDRrLj+nHDsFLpyIQpODHo65a1Xl32WqpQF0
+m8V5WxD/rDQRLdSmqylaNORmYgPOr9GJZ7D/m6SHR8487BtL5OYN8ZGhdIB337Mp
+4l+VbCCIQj+F01Ii
+-----END PGP SIGNATURE-----
