@@ -1,0 +1,84 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 28.1.0 (#1507)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://gitea.com
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/gitea
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/gitea
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 28.1.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+description: Gitea self-hosted Git service with SQLite, PostgreSQL, or MySQL, rootless
+  image, SSH access, and S3 backup.
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/gitea.png
+keywords:
+- - gitea
+- - git
+- - scm
+- - version-control
+- - devops
+- - self-hosted
+maintainers:
+- - name: HelmForge
+  url: https://github.com/helmforgedev
+name: gitea
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/gitea
+- - https://github.com/go-gitea/gitea
+type: application
+version: 1.1.22
+
+...
+files:
+  gitea-1.1.22.tgz: sha256:275221c4bba970b92aec836bc638bd41104a2e0df8acd8cfed1722d5dc4c6b30
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0XEnCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn6/GsS6RKEAvhZp8VsEeiIAdO3Loa7/86FqC/dDZlHUAW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA0pUQALNmEudqxOK0x32IR6KIEpnEPEX+
+erd7MGIDRdbyOgwnKdruTQ0lF6t1R1M7zImwa0CFxB39jFcyN/joco5neFtIp+uk
+iSYF1rRKhEZeRvZ62F6MNnZ5tZESSePPnsUl/3De6GwbsPyJrou5MTFEYQIp97Xs
+YhM11h1Uwae8x77Dl45BleN9LyiLOR8/mJtqccnOqKp4ENvMuqypurj+RLGsl7D6
+XWJj/NnilZVsef+M/5MoUVVzshMBLVy0h9CII4iUnf7xEjCLHi1ndPbW/Zu5p1UN
+f/toHTWldNOPJeQSYW6Hg2w/WOlkuXdopd3wc8VrScTXTwTDm1qnqBY6wzWNBusN
+eI0hQu+rm6O1qH3EH/UIrp0riJ4xTdreQUKZpzKtD8B7SVCfsRkvBYjj66L6WmlD
+vacG/RIL64Ss/yDyYkdOLU6aie0XMx9BS+y5LqUAXpGoAWz4kEepS0bVLBncF/44
+uWgRmSSTyU+VzNoUwSHrggngEGC/kHluF36XvT/JOcWf0P/iQ2P70vz+OAcj4GRu
+4Z2cCW9Dl09difOGX+cRxj3HdmrMdLMCP+w+pgRymEaa9gT8tYOUBS5PIIY5oEJb
+9ZioN4vnJJuenYrAM7nMgNWIN2ODSMk6gq2nx875k8OFKbeLMZglB1/GIdg/XhCu
+6OlwK2ERggLRqUp6
+-----END PGP SIGNATURE-----
