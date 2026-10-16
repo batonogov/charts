@@ -1,0 +1,68 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 26.7.0 (#1523)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/papra-hq/papra
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/papra
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 26.7.0
+description: Private document management with protected first-admin setup, retained
+  identity and durable document storage.
+home: https://helmforge.dev/docs/charts/papra
+icon: https://helmforge.dev/icons/charts/papra.png
+keywords:
+- - papra
+- - documents
+- - archive
+- - kubernetes
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: papra
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/papra
+- - https://github.com/papra-hq/papra
+type: application
+version: 1.0.1
+
+...
+files:
+  papra-1.0.1.tgz: sha256:42310dfee9ca0668c89098ff080d662a0f5274f0d62b2f2565d1997e9b313014
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0cQaCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnvkN4VSVUeklSyfPRbZcBY4toX9452rcjG8UMDlG4uzQW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAUaIQALI5FROk0aPLGa232JjNPSPr1pnA
+9CYPl12A557xEGAfyzECCWIUUpGpp04/f/sk2IKadzNfCYwmdEl+FRKf1UozW2Gf
+AsuyoiwNUKhkc+91lrKyB6o6uVwXA0GrsJpp+W9IK0EHthaKO9hJeP4Gb6OJHp7W
+7FA1i1lbMlJhOMKhRmRyqJnou5cfZtMXenUP3Dtma64kBbqhznUEp+aZcv0mgA6K
+7hH4OsD2PSfBDBT2EagX+YMgtFphj3qFW5iYnMAjJPqapR//ZtsqzX2hlzGKZ7Pw
+QOiyuefeUIRQ5WrQZSpQP4ZohFQiiKWFeF3t97uss2+qt/cgiVbRccqSFxtt1yXQ
+ORm9JxOyUPKptAbmA4zkAe2ouRUVun+IwITVyHrzgsn/8RVsZQv+s3af7wxd9Qvo
+wnm4hs1J3o4SCJ5bU1kTXSxcatfP522S4yTAEGQMzxBw3v3dqQM1CNx/i1Wk9kfI
+DDHUOOJ5+cX9XQGZ/hVfDYz5sjU2U7qNUVWhVy7xXQLQWMzEm7xCm7WG7RmM0MkN
+NH7e9GCKxqv9lXXZ6adnFogNmSg5oZexwwa56S3HqL5rtijk16iTjn7/xctaqzKy
+0gtozG9oym34aSJwQcKJI8txLDj5ejH6dG/P8YYhrAVyeYXGNvepVmuLGHvaiQ7a
+JhVCWTB2MX7e/1xB
+-----END PGP SIGNATURE-----
