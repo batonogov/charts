@@ -1,0 +1,75 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 2026.10.0"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://www.minecraft.net
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/minecraft
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/minecraft
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 2026.10.0
+description: A Helm chart for deploying Minecraft Java Edition servers on Kubernetes
+home: https://helmforge.dev/docs/charts/minecraft
+icon: https://helmforge.dev/icons/charts/minecraft.png
+keywords:
+- - minecraft
+- - game-server
+- - java
+- - paper
+- - forge
+- - fabric
+- - geyser
+- - bedrock
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: minecraft
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://hub.docker.com/r/itzg/minecraft-server
+type: application
+version: 1.5.6
+
+...
+files:
+  minecraft-1.5.6.tgz: sha256:b12e9e1af9221cbfd2f28035370f6b433cf95e7b0bea3624efa4db3b8b605fdd
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0aZ0CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jng/LGwzfYj31IrHTGwxaZFreABG6v+RoNY6H6TC0jBQoW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA42AP/0FJMlNZkZrt9dsWdheIz/sdpo1f
+63dveoPn23hnAR8DHlVFDOheZqWxW2H1F/LFPDoJVNYcxbOonuKYMDBKhBJ7Vu8G
+3gWaAG1MXUFE+Vy7udE8F7xGxc0zNTO0LMNmSabGtciyoo4bcdZ6MHwTyq0b+loB
+J7GtoKtvjyoDATDgIG95EQo/rCCFosQZwRjboVb40Z+EAfSTVJ2XGoqj+XKwcccc
+ssxdxJDlvi8kDz+XNgVcDRFBUIGYvH/4LVU2I+yjiYmOQg+mt99F8M6bqWmlzCeM
+eLCy5OZvIRaNcNFT6aQw8epjicVEZdWkYhJ+GrcEbUOpHuqOypRd8omwTldAtCrp
+sB5/KjCXPsCbxq1kiA1a9Agti+8tGfStAwIRtKk7HCuE+iySD2WePLcPZi7BkWGv
+qscg78a8baHUxzyE3r2Khd6q/Pw09OIUJ7Gy9IJdDVQO87FVxbf4F/lbAz5f03ot
+SBk446F+lWHEF2O/NEQaQVoQ6qp1gbSUlpT4ih8tnoAr5oXwVhS5rh+dBFlsYnhj
+4+dxQq66KNupGNTK0uxF9XKm4yRx5Um+MVpPqiFl2kfeUzgaYSkBNL/XzCKCXyKH
+D0uqSnwPK0MO6wKPa81xY1RuRCOqFz1j5Vn4Hmvu+ZnDS0rtyXerClgYbPcKCs4Y
+Ao4gw9QIc5K6x8xq
+-----END PGP SIGNATURE-----
