@@ -1,0 +1,73 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 2.30.0 (#1520)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://ntfy.sh
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/ntfy
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/ntfy
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: v2.30.0
+description: ntfy self-hosted push notification service with HTTP-based pub-sub
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/ntfy.png
+keywords:
+- - notifications
+- - push-notifications
+- - pub-sub
+- - ntfy
+- - self-hosted
+- - alerting
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: ntfy
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/binwiederhier/ntfy
+type: application
+version: 1.2.3
+
+...
+files:
+  ntfy-1.2.3.tgz: sha256:4b96a1c2137ba4709fb46c1dba4030d26e632c6bcc7e8dd1f00f1d0cceed6e18
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0bs8CRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnIGOzrCDDEsVI5Y0S2Yhv8z/vZxaBEvp++NJkoWqbS/wW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAA3q8P/j64z3iDCnknTPLwwn6iT9HMuxDT
+D03lAcpP/4myo3wMK4BJapCpyCI1+WGzfXI2k40Bh7Ginh7Z9ILOUd3Qt4UJirS8
+a5+zJTXWl2nOpvV8cEoTLnJr4upjvR74J95evSKfU4QmVLaGP/T5PvXopR3lL9nK
+J4YtE0Gqlj+m9fUsIO2YmxHy53n5vrSUhpH2GQv8hE8fxAfZ1S4xPeAWCzTftIID
+8PRksRXIhUIJuwovr4/3z2t9LWHFFdRnIG09LWNXV/+7jjHCJyZmlCmqpygwb1oB
+U8RlhNgvbxn7x80zgADqiNM0LtFzHTEXs/O5ACL3Svf8JPbUfqIZSLImsv5Ml/Pe
+FWO8abt0KR5eQnQVhMCSV4Zls+wjxw7rXnGdyaRh/OLehb+vm3n7Kd+KC+AE7KRU
+fATBVBi3pRBl10wv5eiyTy4DPxfCnQlYEwlRDSU8oaltV/JLbORJv6tlOIoCSHsr
+HIdY7ODY5TzjsA3GxJjpyveqYqz1/uskSCiQjFXzXlvGLrl5NigvGAT1T5ZnnDc7
+5Ly8UFZrlFYrI22Y8tLzh6RVOFllMnvbHrpRM5VshpKDaBkKbeLcKEFz6oviA0SK
+x/DzDDQYftrIVoH6A7s+aHfyvPuP99duLswmj5+mWv6uRDQ1D4HZhXcE4BDF2JUe
+/6gJaySJSNwj0ITI
+-----END PGP SIGNATURE-----
