@@ -1,0 +1,65 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: networking
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump server to 0.80.0"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/prerelease: "false"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/postgresql
+  helmforge.dev/maturity: stable
+apiVersion: v2
+appVersion: 0.80.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.0.5
+description: Self-hosted NetBird control plane for WireGuard overlay networks, identity-aware
+  access, and device management
+home: https://helmforge.dev/docs/charts/netbird
+icon: https://helmforge.dev/icons/charts/netbird.png
+keywords:
+- - wireguard
+- - vpn
+- - zero-trust
+- - mesh
+- - networking
+- - postgresql
+- - self-hosted
+- - kubernetes
+maintainers:
+- - name: HelmForge Team
+  url: https://helmforge.dev
+name: netbird
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/netbird
+- - https://github.com/netbirdio/netbird
+- - https://docs.netbird.io
+type: application
+version: 1.0.12
+
+...
+files:
+  netbird-1.0.12.tgz: sha256:5d266edf6f157c8a1d349e8071317343c40c68535ad06470f4fc299faafd01d8
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0bguCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3JnkVp5WBkLkr7DSkBtJ7pu7rYgpWIrdUsCnvUmcXUlhvwW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAU4IQAIG+pX97GgO0bTpiVzvGQI+0rr3p
+Mxe3rRk6Dy03EuG52u4dQkN2TygzYAt3X9BUy5VRZ7tPugiMGhGbb2n0u4a8sqq7
+MPe1TVNwPjOLprRkKyMliFJiQ6CIInoXym+VIGZ3p+w6g//5UQYCgzzKtcIqHpyH
+j8k4ZYpYCRIqyIOHNI+ZhX6NP2cVnbivM+evg/4n8kXAkyNEvEmfnJjVFQHuKTdv
+QNhFWbgR1bycEAWM0rG4Gi8VTl/Fjvpkv8kFS6bs0pHT0lwyQVUvGvxTpyGz0p4e
+MDw5oconPodqWvxRqjxF9YNwl3RqL87/U1rTcmDk6hJdqvTn6O1P29UrMQUcd526
+9zQUzXfk4lUvomcSv4VpwpewiEUk3CiABKeKPuCTMtat3dnSqV2f5CDT3ov/Lvag
+WdVxItvM7z4IenCW0shOcNelv6RJmaQLO+I4bOxqb/WzHMOow5Ex11W7TW59r+eB
+HiXuudIuBDmEiFcTgF8TZ3trGy8sriCgfE+xnx1zU32xr2amhw6O32TFXUJKqsDW
+t9bZunvFVW9Y89IwKMqahNUHo6rl6+wNwOQl8q7735Imi7hp4seYIC8HIfatfX6I
+L5I7vWjnbJm9KCrkIN8Pw/Eu6TxVppHCW5PQPjhdvFOmCI5gOLJDqoncULfA0i8V
+sT48g06GXnEdwKOi
+-----END PGP SIGNATURE-----
