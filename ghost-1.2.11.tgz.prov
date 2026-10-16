@@ -1,0 +1,81 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: skip-prediction
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 6.69.0 (#1505)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://ghost.org
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/ghost
+    - name: Source
+      url: https://github.com/helmforgedev/charts/tree/main/charts/ghost
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/helmforge/mysql
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 6.69.0
+dependencies:
+- - condition: mysql.enabled
+  name: mysql
+  repository: oci://ghcr.io/helmforgedev/helm
+  version: 2.1.0
+description: Ghost modern publishing platform and headless CMS with MySQL backend
+home: https://helmforge.dev
+icon: https://helmforge.dev/icons/charts/ghost.png
+keywords:
+- - cms
+- - blog
+- - publishing
+- - ghost
+- - headless-cms
+- - newsletter
+- - self-hosted
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: ghost
+sources:
+- - https://github.com/helmforgedev/charts
+- - https://github.com/TryGhost/Ghost
+type: application
+version: 1.2.11
+
+...
+files:
+  ghost-1.2.11.tgz: sha256:bddc75122af2476bce120034647f9213b1fc0199441df9abd7169779dabab67b
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0W9ICRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn/pjUWMY2jboNrn+tRQPhSFbb6L1EBLXH3WRef7di0JMW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAADm0QAMr2xbJEELOSMSITrMrEhGhn2KD0
+sWBvXadbzxK3LPCdGAdzdtFT2nKgvu5Fk4hvUOFai28XqRWpHZ7qtXlXoMUgE/yT
+oyhGjDFMWziEaHJp7wTPq7xEknXpq03y6AC5biAhm42LwvtpbsDk52jT9piyPUN9
+PU596pYeJIVqw2cr94sJIMqUpmB0CIHfwIYWSVckVMVA8PhgSzBpoXyq7RF0FMvP
+H+6WUAhjVcLF6iMElRVxERqG1T85I2ToCI0S4JkXlxvZxBpnPZ/EYx0u4EVFrbPw
+1819xwPhUmvDGrloLrfz6pNVimH4wcaCEa80AVthnVK+jkKZF6HhxweKvsp4BQfv
+jOmW2YlnsSDFMmMsYu12jRRUMes0nUi/bk2CS3EEO09/i7UJM/Gpi64dz5PIRrsr
+/f/K5+K8PJI7g9OjxJNqRz30vWjMNuC0FXE7IdOkJzuvz6/IEI2OEdPhcF9LHtPg
+JaHTsX/25gd8JWv02K2H5SlcZh5IZ+ipU4Q2NS1T18Rp/10IkhCitEohEbgtco/B
+LtAFFMAoMEBVKtCSghCpnHBPATfeFSV9zENd5FOZPr/LQkowFp/1AqFqdsyktv3v
+/nxO9Ts3NVmbh++JRvmOu8Lsn21dqKlLuMCEMqnB1esEK4g2sWzE/Mv7FZ3sohxN
+VTC8Yt+ppGWOOGKo
+-----END PGP SIGNATURE-----
