@@ -1,0 +1,70 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: database
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "bump app to 1.19.2 (#1525)"
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Official Website
+      url: https://github.com/qdrant/qdrant
+    - name: Documentation
+      url: https://helmforge.dev/docs/charts/qdrant
+    - name: Source
+      url: https://github.com/qdrant/qdrant
+    - name: support
+      url: https://github.com/helmforgedev/charts/issues
+  artifacthub.io/maintainers: |
+    - name: HelmForge
+      email: berlofa@helmforge.dev
+    - name: Maicon Berlofa
+      email: maicon.berloffa@gmail.com
+  artifacthub.io/signKey: |
+    fingerprint: 6748042FBAD8C2E11C65E564170D55148EB88A9D
+    url: https://repo.helmforge.dev/pgp-public-key.asc
+  helmforge.dev/maturity: stable
+  helmforge.dev/repository: https://repo.helmforge.dev
+  helmforge.dev/signed: gpg+cosign
+apiVersion: v2
+appVersion: 1.19.2
+description: Qdrant vector database
+home: https://helmforge.dev/docs/charts/qdrant
+icon: https://helmforge.dev/icons/charts/qdrant.png
+keywords:
+- - qdrant
+- - kubernetes
+- - helm
+kubeVersion: '>=1.26.0-0'
+maintainers:
+- - name: helmforgedev
+- - name: mberlofa
+name: qdrant
+sources:
+- - https://github.com/helmforgedev/charts/tree/main/charts/qdrant
+- - https://github.com/qdrant/qdrant
+type: application
+version: 1.0.6
+
+...
+files:
+  qdrant-1.0.6.tgz: sha256:a234070b208848a6d567b6358e9b8c559b2a6b95b7ac387d444cc42401b47b75
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq0csaCRAXDVUUjriKnUUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jny7C3axz5j6Kwg33O5IF3k0AP5Erwyr44lr4d/zSCTAEW
+IQRnSAQvutjC4Rxl5WQXDVUUjriKnQAAl2AP/3+0WJWKwvOQOGXGWXLe0qDKWcay
+qnHiW/hw8dJ7+sTWDmWb8UsBP3rvowl8AWDWGbAmqo7x0/XjNz8+0ZZOQnTKdgep
+y3csOMpFy/tPvGvQi7QBrjzUxG0qaqcDeHOCegphIDk0mKc7vW/GGhv545ao/EcM
+vs4Kmh+pkws+SfrxZnDH0L9MLQDtIJZZaIsw/e83d3kG4lWtXKNc+SVKznRiyPnI
+3CM1XVqHDgixu5N0n+EBHeTQ0Xi/l+T/8lNWi5ZBZpxdZsN32s7Rbnymedba1bcU
+X1UDfDbvqbXwiWdWFNAfpmWeYZpP8St0xLgSJ5/+bYihK3LDmSuh6q/3b8fTiy96
+CBSJxPzvW1kSofUIODzJQE/XUUUeZCosWr7TL9kH2a61GqeSz6smMhNnszOYyGR/
+1LP2UOHbNF1K2CYrKmYAYkicYY8KYJlm2kBwHmAFb/YWPIh10wh2tknvB1oObsfA
+KP49xNsACzTVB9UHTa6Z1DGAGyPZEqe+dBDz2uiRrBw6tw9XC62W/1TIfij0uw/N
+LTm9DPX8g87GzVqaWYRmxblGQ/yrNsrgGjbvzGCm3DeAPSGYWQEr3uKaFye/ifNZ
+Sqo75fUZhGSc65l00wxH0KTduHVlTm0kqlY95EA/N8XWr5/T8Cd+QJcIUtmVKAhB
+hiF2H0lClYMrc0L4
+-----END PGP SIGNATURE-----
