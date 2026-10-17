@@ -62,6 +62,13 @@ geolocation data before opening the health endpoint.
 
 Use `server.config.existingSecret` when you need to provide a full upstream `config.yaml` directly. Otherwise the chart renders one from values and stores it in a Kubernetes Secret.
 
+With `server.config.existingSecret`, the chart uses your configuration unchanged.
+In the supplied config's `server.auth.dashboardRedirectURIs`, omit `:443` from
+HTTPS URLs and `:80` from HTTP URLs to match browser origins. Updating only the
+Secret data does not change the Deployment's config checksum or trigger a
+rollout, so restart the server Deployment after updating the Secret to load
+the new configuration.
+
 ## Embedded identity provider
 
 The default dashboard authentication settings match the identity provider
@@ -90,10 +97,11 @@ when integrating an external OIDC provider.
 An explicit default port in `server.publicUrl` (`:443` for HTTPS or `:80` for
 HTTP) is omitted from the generated dashboard callback URLs to match browser
 origins. The public URL remains unchanged for the server's exposed address.
-Upgrading from chart `1.0.12` updates the server pod's config checksum and
-automatically restarts it to load the corrected callbacks. If you configured
-absolute `dashboard.auth.redirectUri` or `dashboard.auth.silentRedirectUri`
-values, omit the scheme's default port there as well.
+For chart-managed configuration, upgrading from chart `1.0.12` updates the
+server pod's config checksum and automatically restarts it to load the
+corrected callbacks. If you configured absolute `dashboard.auth.redirectUri`
+or `dashboard.auth.silentRedirectUri` values, omit the scheme's default port
+there as well.
 
 ## Storage
 
