@@ -87,6 +87,14 @@ URLs below `server.publicUrl`. Keep the dashboard and server on the same public
 hostname when using the embedded provider. Override all dashboard auth values
 when integrating an external OIDC provider.
 
+An explicit default port in `server.publicUrl` (`:443` for HTTPS or `:80` for
+HTTP) is omitted from the generated dashboard callback URLs to match browser
+origins. The public URL remains unchanged for the server's exposed address.
+Upgrading from chart `1.0.12` updates the server pod's config checksum and
+automatically restarts it to load the corrected callbacks. If you configured
+absolute `dashboard.auth.redirectUri` or `dashboard.auth.silentRedirectUri`
+values, omit the scheme's default port there as well.
+
 ## Storage
 
 The default store mode is `auto`, which selects the PostgreSQL subchart unless
