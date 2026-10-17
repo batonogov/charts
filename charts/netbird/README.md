@@ -99,9 +99,10 @@ HTTP) is omitted from the generated dashboard callback URLs to match browser
 origins. The public URL remains unchanged for the server's exposed address.
 For chart-managed configuration, upgrading from chart `1.0.12` updates the
 server pod's config checksum and automatically restarts it to load the
-corrected callbacks. If you configured absolute `dashboard.auth.redirectUri`
-or `dashboard.auth.silentRedirectUri` values, omit the scheme's default port
-there as well.
+corrected callbacks. The dashboard appends `dashboard.auth.redirectUri` and
+`dashboard.auth.silentRedirectUri` to `window.location.origin`, so these values
+must be relative paths. Replace any absolute callback URL overrides with
+`/nb-auth` and `/nb-silent-auth`, respectively, when using the embedded provider.
 
 ## Storage
 
